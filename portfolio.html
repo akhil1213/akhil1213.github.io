@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{
+			margin-top: 0px;
+			position:relative;
+		}
+		body{
+			background-color: #264d73;
+		}
+		.navbar ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		.experience ul{
+			list-style-type: none;
+		}
+		.navbar li {
+		  float: right;
+		  padding: 0px;
+		  height:50px;
+		}
+
+		.navbar li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		.navbar li a:hover {
+		  background-color: #111;
+		}
+		#name{
+			font-family: "Georgia";
+			float:left;
+			color:red;
+			padding-left: 30px;
+			text-transform: uppercase;
+		}
+		span{
+			font-size: 30px;
+		}
+		.viewheader-card{
+  padding-left:12px;
+}
+#big{
+	font-size:30px;
+}
+.view-item{
+  display:flex;
+  flex:row;
+  padding-bottom: 10px;
+}
+.view-body{
+  padding-top:-10px;
+}
+.view-item img{
+  width:8px;
+  padding: 3px;
+}
+.topOfInterests{
+	display:flex;
+	flex:row;
+}
+fieldset{
+    border: 3px solid lightgray;
+}
+legend{
+	font-size: 18px;
+	color: blue;
+	font-weight: bolder;
+}
+.resume{
+	display:flex;
+	flex:row;
+}
+.resume button{
+	background: none;
+  border: none;
+  padding: 0;
+}
+.resume button:hover{
+	border-bottom: blue solid 2px;
+}
+#dropdown li{
+	border-left: 3px solid black;
+}
+#csexplanation,#dentistexplanation{
+	display:none;
+}
+#resumedate{
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+#position{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#position span{
+	font-size: 25px;
+}
+#mathexplanation{
+	color:teal;
+}
+#resumelist ul{
+	list-style-image: url('bulletpoint.png');
+}
+
+
+
+	</style>
+	<!-- JAVA ACSIRPT BELOW -->
+	<script type = "text/javascript">
+		function displayExplanation(id){
+			document.getElementById(id).style.display = "block";
+			switch(id){
+				case 'mathexplanation':
+					document.getElementById('csexplanation').style.display = "none";
+					document.getElementById('dentistexplanation').style.display = "none";
+					break;
+				case 'csexplanation':
+					document.getElementById('mathexplanation').style.display = "none";
+					document.getElementById('dentistexplanation').style.display = "none";
+					break;
+				case 'dentistexplanation':
+					document.getElementById('mathexplanation').style.display = "none";
+					document.getElementById('csexplanation').style.display = "none";
+					break;
+			}
+		}
+	</script>
+	<title></title>
+</head>
+<body>
+
+	<div class = "navbar">
+		<ul>
+			  <li id = "name"><div><p><span id = "big">A</span>khil <span id = "big">K</span>hanna</p></div></li>
+			  <li><a>Contact</a></li>
+			  <li><a>Experience</a></li>
+			  <li><a href = "Knowledge.html">Knowledge</a></li>
+			  <li><a>About Me</a></li>
+			  <li><a href = "portfolio.html">Welcome</a></li>
+		</ul>
+	</div>
+                        <p class="introduction">My name is Akhil Khanna. I am a Bachelor student in Computer Science at Queens College. I'm a year away from completing my Bachelors degree in Computer Science and a Math minor.</p>
+                        <p class="introduction">I am currently seeking a Software Developer Internship. I have been working on several projects in various fields of Computer Science but have been focusing on Web Development. In order of proficiency: Java, HTML/CSS/JavaScript, Angular, SQL. I am proficient in Linux, Windows, and Mac operating systems. For any further questions, please feel free to visit <a href = "">contact</a> me.</p>
+                        <p>Here are a few technologies I've been working with recently:</p>
+    </div>
+      <div class = "topOfInterests">
+		       <div class = "leftInterest">
+			        <div class = "view-body">
+			              <div class = "view-item">
+			                  <img src = "bulletpoint.png" height = "40px" width = "22px">
+			                  <div id ="followersunder">
+			                    <div>Java</div>
+			                  </div>
+			              </div>
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>Html/CSS</div>
+			                  </div>
+			              </div>
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>Angular</div>
+			                  </div>
+			              </div>
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>sql/mySQL</div>
+			                  </div>
+			              </div>
+			         </div>
+		        </div>
+		        <div class = "rightInterest">
+		        	<div class = "view-body">
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>Java</div>
+			                  </div>
+			            </div>
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>Html/CSS</div>
+			                  </div>
+			              </div>
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>Angular</div>
+			                  </div>
+			              </div>
+			              <div class = "view-item">
+			                  <img src = "../../assets/investorimage.png">
+			                  <div id ="followersunder">
+			                    <div>sql/mySQL</div>
+			                  </div>
+			              </div>
+			          </div>
+			    </div>
+	  </div>
+	  <div class = "experience">
+	  	<fieldset>
+	  		<legend>Where I've Worked</legend>
+	  		<div class = "resume">
+		  		<ul id = "dropdown">
+		  			<li><button id = "math" onclick = "displayExplanation('mathexplanation')">Math Tutor</button></li>
+		  			<li><button id = "cs" onclick = "displayExplanation('csexplanation')">CS Tutor</button></li>
+		  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist Office</button></li>
+		  		</ul>
+		  		<div id = "mathexplanation">
+						<div id = "position"><h2>Math Tutor <span>@ Queens Borough Community College </span></h2></div>
+						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+						<div id = "resumelist">
+								<ul id = "">
+										<li>
+											<img src = "bulletpoint.png" >
+											<p>Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.</p>
+										</li>
+										<li>
+											<img src ="">
+											<p>Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.</p>
+										</li>
+										<li>
+											<img src ="">
+											<p>Helped students with debugging programs and understanding project requirements.</p>
+										</li>
+										<li>
+											<img src ="">
+											<p>Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.</p>
+										</li>
+								</ul>
+						</div>
+		  		</div>
+		  		<div id = "csexplanation">
+		  			<p>I worked as a compsci tutor fucking bitches and getting their numbers every now and then but i helped them with math 119 ya dig</p>
+		  		</div>
+		  		<div id = "dentistexplanation">
+		  			<p>I worked as a denitsi tutor fucking bitches and getting their numbers every now and then but i helped them with math 119 ya dig</p>
+		  		</div>
+	  		</div>
+	  	</fieldset>
+	  </div>
+	  </div>
+
+<div class = "projects">
+    <!--Software Projects-->
+      <section class="row content-section text-center" id="software-section">
+        
+            <h1 class="section-title text-center" style="min-width:100%">Developed Projects</h1>
+        
+            <div class="row" id="software-section">
+                <div class="col-md-6">
+                    <img src="/images/blue.png" class="img-responsive">
+                    <h5 class="software-title">Invie: Social media platform for Investors to find companies to Invest in</h5>
+                </div>
+                  <div class="col-md-6">
+                    <img src="/images/regiovinco.jpg" class="img-responsive">
+                    <h5 class="software-title">Graph GUI vertices class project</h5>
+                  </div>
+            </div>
+      </section>
+</div>
+</div>
+        </div>
+        <div>
+            <section class="row" id="contact-section">
+                    <div style="min-width: 100%">
+                     <a href="/contact"><img src="/images/contact.png" class="hello"></a> 
+                      <h2>
+                        Akhil Khanna </br>
+                        +1(917)-415-3421 </br>
+                        <a href="mailto:akhilkhanna1213@yahoo.com">akhilkhanna1213@yahoo.com</a>
+                      </h2>
+                       <p class="social-media">
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                            <a href="https://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/sjxswgjhf"><i class="fa fa-github"></i></a>
+                        </p>
+                      <h5>Mar. 26 2019</h5>    
+                    </div>
+                  </section>        </div>
+
+
+</body>
+	<script>
+
+	</script>
+</body>
+</html>
