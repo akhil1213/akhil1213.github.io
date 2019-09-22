@@ -16,7 +16,7 @@
 		  overflow: hidden;
 		  background-color: #333;
 		}
-		.experience ul{
+		#experience ul{
 			list-style-type: none;
 		}
 		.navbar li {
@@ -104,14 +104,66 @@ legend{
 #position span{
 	font-size: 25px;
 }
-#mathexplanation{
+#mathexplanation,#csexplanation, #dentistexplanation{
 	color:teal;
 }
 #resumelist ul{
 	list-style-image: url('bulletpoint.png');
+	background-size: 2px;
 }
+#green{
+	font-family :'Courier New', Courier, monospace;
+	color: aqua;
+}
+.nameinintro #big{
+	font-size: 65px;
+	color: white;
+	font-weight: bold;
+}
+#gray{
+	color: gray;
+	font-size:55px;
+}
+.intro{
+	margin-top: 5%;
+	margin-left: 10%;
+	width:45%;
+}
+.introdescription{
+	color:gray;
+	font-size:21px;
+	margin-top: 35px;
+}
+.getintouchbutton{
+	margin-top: 60px;
+	display:flex;
+	flex:row;
+	/* make everything inside getintouchbutton container side by side */
+}
+.number{
+	margin-left: 30px;
+}
+.getintouchbutton a{
+		border: 2px solid aqua;
+		padding: 10px;
+		text-decoration: none;
+		color:aqua;
 
+}
+.getintouchbutton a:hover{
+	background-color:gray;
+}
+#aboutme{
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin-top: 130px;
+	color:gray;
+}
+#aboutme h2{
+	font-size:50px;
+	color:cadetblue
 
+}
 
 	</style>
 	<!-- JAVA ACSIRPT BELOW -->
@@ -140,17 +192,39 @@ legend{
 
 	<div class = "navbar">
 		<ul>
-			  <li id = "name"><div><p><span id = "big">A</span>khil <span id = "big">K</span>hanna</p></div></li>
+			  <li id = "name"><div><p><span id = "big">A</span>.<span id = "big">K</span>.</p></div></li>
 			  <li><a>Contact</a></li>
-			  <li><a>Experience</a></li>
+			  <li><a href = "#experience">Experience</a></li>
 			  <li><a href = "Knowledge.html">Knowledge</a></li>
-			  <li><a>About Me</a></li>
+			  <li><a href = "#aboutme">About Me</a></li>
 			  <li><a href = "portfolio.html">Welcome</a></li>
 		</ul>
 	</div>
-                        <p class="introduction">My name is Akhil Khanna. I am a Bachelor student in Computer Science at Queens College. I'm a year away from completing my Bachelors degree in Computer Science and a Math minor.</p>
-                        <p class="introduction">I am currently seeking a Software Developer Internship. I have been working on several projects in various fields of Computer Science but have been focusing on Web Development. In order of proficiency: Java, HTML/CSS/JavaScript, Angular, SQL. I am proficient in Linux, Windows, and Mac operating systems. For any further questions, please feel free to visit <a href = "">contact</a> me.</p>
-                        <p>Here are a few technologies I've been working with recently:</p>
+	<div class = "intro">
+		<div class = "nameinintro">
+			<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I organized data and build things for the web.</span><br></p>
+		</div>
+		<div class = "introdescription">
+				<p>I am a Bachelor student in Computer Science at Queens College. I'm a year away from completing my Bachelors degree in Computer Science and a Math minor.</p>
+		</div>
+		<div class = "getintouchbutton">
+				<div class = "email">
+						<a href = "mailto:akhilkhanna1213@gmail.com">Email</a>
+				</div>
+				<div class = "number">
+						<a href = "tel:+9174153421">Call/Text</a>
+				</div>
+		</div>
+	</div>	
+	<div id = "aboutme">
+		<h2>About Me</h2>
+			<p>I am currently seeking a Software Developer Internship. I have been working on several projects in various fields of Computer Science but have been focusing on Database Administration and Web Development. In order of proficiency: Java, HTML/CSS/JavaScript, SQL/postgreSQL/mongoDB, and Angular. I am proficient in Linux, Windows, and Mac operating systems. For any further questions, please feel free to visit <a href = "">contact</a> me.</p>
+			<p>I am currently a computer science major at Queens College. In the last two years of my college experience, I have remained focused in understanding programming languages and tools. I consider myself as an ambitious student looking to gain experience in the field of computer science.
+				While pursing my education, I have been known for my ability to work well with my peers. I enjoy challenging myself and demonstrate strength in problem solving skills. In order to accomplish my goals, I stay organized and focused with tasks on hand.
+				Often, I find myself exploring multiple different technologies and trying to understand how they were implemented and most importantly fabricated.
+			</p>
+	</div>
+												<p>Here are a few technologies I've been working with recently:</p>
     </div>
       <div class = "topOfInterests">
 		       <div class = "leftInterest">
@@ -186,31 +260,31 @@ legend{
 			              <div class = "view-item">
 			                  <img src = "../../assets/investorimage.png">
 			                  <div id ="followersunder">
-			                    <div>Java</div>
+			                    <div>Python</div>
 			                  </div>
 			            </div>
 			              <div class = "view-item">
 			                  <img src = "../../assets/investorimage.png">
 			                  <div id ="followersunder">
-			                    <div>Html/CSS</div>
+			                    <div>Big Data</div>
 			                  </div>
 			              </div>
 			              <div class = "view-item">
 			                  <img src = "../../assets/investorimage.png">
 			                  <div id ="followersunder">
-			                    <div>Angular</div>
+			                    <div>mongoDB</div>
 			                  </div>
 			              </div>
 			              <div class = "view-item">
 			                  <img src = "../../assets/investorimage.png">
 			                  <div id ="followersunder">
-			                    <div>sql/mySQL</div>
+			                    <div>postgreSQL</div>
 			                  </div>
 			              </div>
 			          </div>
 			    </div>
 	  </div>
-	  <div class = "experience">
+	  <div id = "experience">
 	  	<fieldset>
 	  		<legend>Where I've Worked</legend>
 	  		<div class = "resume">
@@ -225,29 +299,63 @@ legend{
 						<div id = "resumelist">
 								<ul id = "">
 										<li>
-											<img src = "bulletpoint.png" >
 											<p>Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.</p>
 										</li>
 										<li>
-											<img src ="">
 											<p>Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.</p>
 										</li>
 										<li>
-											<img src ="">
 											<p>Helped students with debugging programs and understanding project requirements.</p>
 										</li>
 										<li>
-											<img src ="">
 											<p>Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.</p>
 										</li>
 								</ul>
 						</div>
 		  		</div>
 		  		<div id = "csexplanation">
-		  			<p>I worked as a compsci tutor fucking bitches and getting their numbers every now and then but i helped them with math 119 ya dig</p>
+		  			<div id = "position"><h2>CS Tutor <span>@ Queens College </span></h2></div>
+						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+						<div id = "resumelist">
+								<ul id = "">
+										<li>
+
+											<p>Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.</p>
+										</li>
+										<li>
+
+											<p>Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.</p>
+										</li>
+										<li>
+
+											<p>Helped students with debugging programs and understanding project requirements.</p>
+										</li>
+										<li>
+
+											<p>Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.</p>
+										</li>
+								</ul>
+						</div>
 		  		</div>
 		  		<div id = "dentistexplanation">
-		  			<p>I worked as a denitsi tutor fucking bitches and getting their numbers every now and then but i helped them with math 119 ya dig</p>
+							<div id = "position"><h2>Dentist office <span>@ Great Neck Dental </span></h2></div>
+							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+							<div id = "resumelist">
+									<ul id = "">
+											<li>
+												<p>Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.</p>
+											</li>
+											<li>
+												<p>Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.</p>
+											</li>
+											<li>
+												<p>Helped students with debugging programs and understanding project requirements.</p>
+											</li>
+											<li>
+												<p>Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.</p>
+											</li>
+									</ul>
+							</div>
 		  		</div>
 	  		</div>
 	  	</fieldset>
