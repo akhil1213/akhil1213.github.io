@@ -1,171 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		div{
-			margin-top: 0px;
-			position:relative;
-		}
-		body{
-			background-color: #264d73;
-		}
-		.navbar ul {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: #333;
-		}
-		#experience ul{
-			list-style-type: none;
-		}
-		.navbar li {
-		  float: right;
-		  padding: 0px;
-		  height:50px;
-		}
-
-		.navbar li a {
-		  display: block;
-		  color: white;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		}
-
-		.navbar li a:hover {
-		  background-color: #111;
-		}
-		#name{
-			font-family: "Georgia";
-			float:left;
-			color:red;
-			padding-left: 30px;
-			text-transform: uppercase;
-		}
-		span{
-			font-size: 30px;
-		}
-		.viewheader-card{
-  padding-left:12px;
-}
-#big{
-	font-size:30px;
-}
-.view-item{
-  display:flex;
-  flex:row;
-  padding-bottom: 10px;
-}
-.view-body{
-  padding-top:-10px;
-}
-.view-item img{
-  width:8px;
-  padding: 3px;
-}
-.topOfInterests{
-	display:flex;
-	flex:row;
-}
-fieldset{
-    border: 3px solid lightgray;
-}
-legend{
-	font-size: 18px;
-	color: blue;
-	font-weight: bolder;
-}
-.resume{
-	display:flex;
-	flex:row;
-}
-.resume button{
-	background: none;
-  border: none;
-  padding: 0;
-}
-.resume button:hover{
-	border-bottom: blue solid 2px;
-}
-#dropdown li{
-	border-left: 3px solid black;
-}
-#csexplanation,#dentistexplanation{
-	display:none;
-}
-#resumedate{
-	font-family: 'Courier New', Courier, monospace;
-	font-weight: bold;
-}
-#position{
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#position span{
-	font-size: 25px;
-}
-#mathexplanation,#csexplanation, #dentistexplanation{
-	color:teal;
-}
-#resumelist ul{
-	list-style-image: url('bulletpoint.png');
-	background-size: 2px;
-}
-#green{
-	font-family :'Courier New', Courier, monospace;
-	color: aqua;
-}
-.nameinintro #big{
-	font-size: 65px;
-	color: white;
-	font-weight: bold;
-}
-#gray{
-	color: gray;
-	font-size:55px;
-}
-.intro{
-	margin-top: 5%;
-	margin-left: 10%;
-	width:45%;
-}
-.introdescription{
-	color:gray;
-	font-size:21px;
-	margin-top: 35px;
-}
-.getintouchbutton{
-	margin-top: 60px;
-	display:flex;
-	flex:row;
-	/* make everything inside getintouchbutton container side by side */
-}
-.number{
-	margin-left: 30px;
-}
-.getintouchbutton a{
-		border: 2px solid aqua;
-		padding: 10px;
-		text-decoration: none;
-		color:aqua;
-
-}
-.getintouchbutton a:hover{
-	background-color:gray;
-}
-#aboutme{
-	font-size: 15px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	margin-top: 130px;
-	color:gray;
-}
-#aboutme h2{
-	font-size:50px;
-	color:cadetblue
-
-}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<!-- JAVA ACSIRPT BELOW -->
 	<script type = "text/javascript">
 		function displayExplanation(id){
@@ -189,7 +25,6 @@ legend{
 	<title></title>
 </head>
 <body>
-
 	<div class = "navbar">
 		<ul>
 			  <li id = "name"><div><p><span id = "big">A</span>.<span id = "big">K</span>.</p></div></li>
@@ -202,7 +37,7 @@ legend{
 	</div>
 	<div class = "intro">
 		<div class = "nameinintro">
-			<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I organized data and build things for the web.</span><br></p>
+			<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I organize data for the backend of Applications</span><br></p>
 		</div>
 		<div class = "introdescription">
 				<p>I am a Bachelor student in Computer Science at Queens College. I'm a year away from completing my Bachelors degree in Computer Science and a Math minor.</p>
@@ -288,24 +123,25 @@ legend{
 	  	<fieldset>
 	  		<legend>Where I've Worked</legend>
 	  		<div class = "resume">
-		  		<ul id = "dropdown">
-		  			<li><button id = "math" onclick = "displayExplanation('mathexplanation')">Math Tutor</button></li>
-		  			<li><button id = "cs" onclick = "displayExplanation('csexplanation')">CS Tutor</button></li>
-		  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist Office</button></li>
-		  		</ul>
+	  			<div id = "jobs">
+			  		<ul id = "dropdown">
+			  			<li><button id = "math" onclick = "displayExplanation('mathexplanation')">Math Tutor</button></li>
+			  			<li><button id = "cs" onclick = "displayExplanation('csexplanation')">CS Tutor</button></li>
+			  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist Office</button></li>
+			  		</ul>
+		  		</div>
 		  		<div id = "mathexplanation">
+		  			<div id = "positionanddate">
 						<div id = "position"><h2>Math Tutor <span>@ Queens Borough Community College </span></h2></div>
 						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+					</div>
 						<div id = "resumelist">
 								<ul id = "">
 										<li>
-											<p>Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.</p>
+											<p>Clarified foundational Math concepts in one-on-one and group settings, reviewing and implementing a wide array of Algebra and Calculus topics</p>
 										</li>
 										<li>
-											<p>Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.</p>
-										</li>
-										<li>
-											<p>Helped students with debugging programs and understanding project requirements.</p>
+											<p>Provided one-on-one attention to students, while maintaining overall focus on the entire group.</p>
 										</li>
 										<li>
 											<p>Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.</p>
@@ -338,22 +174,25 @@ legend{
 						</div>
 		  		</div>
 		  		<div id = "dentistexplanation">
-							<div id = "position"><h2>Dentist office <span>@ Great Neck Dental </span></h2></div>
+							<div id = "position"><h2>Dental Assistant<span>@ Great Neck Dental </span></h2></div>
 							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
 							<div id = "resumelist">
-									<ul id = "">
+									<ul >
 											<li>
-												<p>Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.</p>
+												<p>Developed a process which helped maintain patient records effectively using SQL.
+												</p>
 											</li>
 											<li>
-												<p>Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.</p>
+												<p>Assisted a dentist during procedures by handing them instruments and kept patients mouths dry by using suction hoses.
+												</p>
 											</li>
 											<li>
-												<p>Helped students with debugging programs and understanding project requirements.</p>
+												<p>Greeted patients inside the office making sure they felt comfortable and welcomed</p>
 											</li>
 											<li>
-												<p>Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.</p>
+												<p>Instructed patients in proper oral hygiene after their treatment.</p>
 											</li>
+
 									</ul>
 							</div>
 		  		</div>
@@ -361,27 +200,27 @@ legend{
 	  	</fieldset>
 	  </div>
 	  </div>
-
 <div class = "projects">
     <!--Software Projects-->
       <section class="row content-section text-center" id="software-section">
-        
-            <h1 class="section-title text-center" style="min-width:100%">Developed Projects</h1>
-        
-            <div class="row" id="software-section">
-                <div class="col-md-6">
-                    <img src="/images/blue.png" class="img-responsive">
-                    <h5 class="software-title">Invie: Social media platform for Investors to find companies to Invest in</h5>
-                </div>
-                  <div class="col-md-6">
-                    <img src="/images/regiovinco.jpg" class="img-responsive">
-                    <h5 class="software-title">Graph GUI vertices class project</h5>
-                  </div>
-            </div>
+        	<fieldset>
+	  			<legend>Projects</legend>
+	  			<div>
+	  				<div id = "projectheader">
+	  					<div id = "titleanddesc">
+		  					<div id = "title"><h2>Invie:<span id = "small">Social media platform for Investors to find companies to Invest in</span></h2>
+		  					</div>
+		  					<div id = "projectdesc">
+		  						<p>Worked on a team of four students to create a web app using Angular, mongoDB, nodeJS, and the express framework. The website was designed to connect investors and Companies. Responsible for implementing the login/signup page, feed page, settings page, and the investors page using HTML, CSS, TypeScript. As well as connecting the frontend to the backend using express routes to make get,post,put, and delete requests to the mongoDB running inside the backend server. Mongoose was used to connect and send queries to the mongoDB instance.</p>
+		  					</div>
+	  					</div>
+	  					<div id = "picofproject">
+	  						<img src = "inviewebsite.png" width = "70%" height = "90%">
+	  					</div>
+	  				</div>
+	  		</fieldset>
       </section>
 </div>
-</div>
-        </div>
         <div>
             <section class="row" id="contact-section">
                     <div style="min-width: 100%">

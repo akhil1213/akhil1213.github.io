@@ -1,0 +1,185 @@
+		div{
+			margin-top: 0px;
+			position:relative;
+		}
+		body{
+			background-color: #264d73;
+		}
+		.navbar ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+		#experience ul{
+			list-style-type: none;
+		}
+		.navbar li {
+		  float: right;
+		  padding: 0px;
+		  height:50px;
+		}
+		.navbar li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		.navbar li a:hover {
+		  background-color: #111;
+		}
+		#name{
+			font-family: "Georgia";
+			float:left;
+			color:red;
+			padding-left: 30px;
+			text-transform: uppercase;
+		}
+		span{
+			font-size: 30px;
+		}
+		.viewheader-card{
+  			padding-left:12px;
+		}
+#big{
+	font-size:30px;
+}
+.view-item{
+  display:flex;
+  flex:row;
+  padding-bottom: 10px;
+}
+.view-body{
+  padding-top:-10px;
+}
+.view-item img{
+  width:8px;
+  padding: 3px;
+}
+.topOfInterests{
+	display:flex;
+	flex:row;
+}
+fieldset{
+    border: 3px solid lightgray;
+}
+legend{
+	font-size: 18px;
+	color: blue;
+	font-weight: bolder;
+}
+.resume{
+	display:flex;
+	flex:row;
+}
+.resume button{
+	background: none;
+  border: none;
+  padding: 0;
+}
+.resume button:hover{
+	border-bottom: blue solid 2px;
+}
+#dropdown li{
+	border-left: 3px solid black;
+}
+#mathexplanation,#dentistexplanation{
+	display:none;
+}
+#resumedate{
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+#position{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#position span{
+	font-size: 25px;
+}
+#mathexplanation,#csexplanation, #dentistexplanation{
+	color:teal;
+}
+#resumelist ul li:before{
+	color:red;
+	content:"\2764";
+	display:inline-block;
+}
+#green{
+	font-family :'Courier New', Courier, monospace;
+	color: aqua;
+}
+.nameinintro #big{
+	font-size: 65px;
+	color: white;
+	font-weight: bold;
+}
+#gray{
+	color: gray;
+	font-size:55px;
+}
+.intro{
+	margin-top: 5%;
+	margin-left: 10%;
+	width:45%;
+}
+.introdescription{
+	color:gray;
+	font-size:21px;
+	margin-top: 35px;
+}
+.getintouchbutton{
+	margin-top: 60px;
+	display:flex;
+	flex:row;
+	/* make everything inside getintouchbutton container side by side */
+}
+.number{
+	margin-left: 30px;
+}
+.getintouchbutton a{
+		border: 2px solid aqua;
+		padding: 10px;
+		text-decoration: none;
+		color:aqua;
+
+}
+.getintouchbutton a:hover{
+	background-color:gray;
+}
+#aboutme{
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin-top: 130px;
+	color:gray;
+}
+#aboutme h2{
+	font-size:50px;
+	color:cadetblue
+
+}
+#positionanddate{
+	margin-left:0px;
+}
+
+#small{
+	font-size:10px;
+
+}
+#projectheader{
+	display:flex;
+	flex:row;
+}
+#projectdesc{
+	background-color: #004C99;
+	margin-left:20px;
+	padding:8px;
+	display:inline-block;
+	width:45%;
+	color:gray;
+
+}
+#titleanddesc{
+	color:teal;
+}
