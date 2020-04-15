@@ -39,7 +39,7 @@ progress[value] {
   width: 100px;
   height: 10px;
   margin-top:20px;
-  margin-left:12%;
+  margin-left:14%;
   position:absolute;
 }
 
@@ -123,6 +123,8 @@ span{
 .view-item{
   display:flex;
   flex:row;
+  color:black;
+  font-weight:bold;
   /*padding-bottom: 10px;*/
 }
 .view-body{
