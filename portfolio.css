@@ -1,6 +1,6 @@
 section.about {
   /* background-color: #e8e8e8; */
-  background-image: url("https://images.pexels.com/photos/2083840/pexels-photo-2083840.jpeg?cs=srgb&dl=scenic-view-of-city-during-dawn-2083840.jpg&fm=jpg");
+  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -8,15 +8,20 @@ section.about {
   background-repeat: no-repeat !important;
   background-attachment: fixed;
   width: auto;
-
+  /*opacity:0.3;*/
   padding: 400px;
-  /*opacity: 0.8;*/
+  padding-top:70px;
+  /*opacity: 0.2*/
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
+#aboutme{
+	background-color:#1a1a1a;
+}
 body {
-  background-color: #1a1a1a;
-  color:teal;
-  background-image: url("https://images.pexels.com/photos/2129814/pexels-photo-2129814.png?cs=srgb&dl=architecture-bridge-buildings-2129814.jpg&fm=jpg");
+  background-color: #0e518c;
+  color:#dce3df;
+  /*opacity:0.3;*/
+  /*background-image: url("https://images.pexels.com/photos/2129814/pexels-photo-2129814.png?cs=srgb&dl=architecture-bridge-buildings-2129814.jpg&fm=jpg");*/
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -27,9 +32,6 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-}
-section.experience {
-	background-color: #3d2766;
 }
 progress[value] {
   /* Reset the default appearance */
@@ -123,7 +125,7 @@ span{
 .view-item{
   display:flex;
   flex:row;
-  color:black;
+  /*color:black;*/
   font-weight:bold;
   /*padding-bottom: 10px;*/
 }
@@ -242,16 +244,13 @@ legend{
 	font-size: 15px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	margin-top: 130px;
-	color:black;
+	/*color:black;*/
 }
 #aboutme h2{
 	font-size:50px;
 	color: aqua;
 
 
-}
-#technologies{
-	color:#2c1d38;
 }
 #positionanddate{
 	margin-left:10px;
@@ -275,5 +274,6 @@ legend{
 
 }
 #titleanddesc{
-	color:teal;
+	/*color:teal;*/
 }
+
