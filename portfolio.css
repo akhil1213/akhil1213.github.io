@@ -1,6 +1,6 @@
 section.about {
   /* background-color: #e8e8e8; */
-  background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-image: url("https://images.pexels.com/photos/3312569/pexels-photo-3312569.jpeg?cs=srgb&dl=bird-s-eye-view-of-rocky-mountain-during-daytime-3312569.jpg&fm=jpg");
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
@@ -16,7 +16,7 @@ section.about {
 }
 #aboutme{
 	/*background-color:#1a1a1a;*/
-  color:blue;
+  color:white;
   font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
 }
 body {#
