@@ -223,6 +223,19 @@
 	  			<div>
 	  				<div id = "projectheader">
 	  					<div id = "titleanddesc">
+		  					<div id = "title"><h2>Drag-In-Drop application<span id = "small">Optimizes time it takes for client info to get into C.R.M</span></h2>
+		  				</div>
+	  					<div id = "projectdesc">
+	  						<p>Technologies I used were Python-Django, AWS lamdba/s3, and textract. A forum pdf file of each client's information is dragged into the file upload input which is then converted into a png using the pdf2png api. Then this image is sent to AWS s3 using boto3, from there textract sends back key/value pairs of the forum. I then created an algorithm to extract the proper data from key/value pairs given to us from textract. On top of that, I verfied customers credit score using the credco api by sending the social security number of each client to their endpoint. All the extracted data was posted to the Salesforce CRM using SalesforceApi. Something's I learned was how to make python django's default storage to be s3 and how to set up boiler plate code for python django. I learned how to create models in django where our model contained the photo file path. I did this all in one month.</p>
+	  					</div>
+  					</div>
+  					<div id = "picofproject">
+  						<img src = "inviewebsite.png" width = "70%" height = "90%">
+  					</div>
+	  			</div>
+	  			<div>
+	  				<div id = "projectheader">
+	  					<div id = "titleanddesc">
 		  					<div id = "title"><h2>Instagram:<span id = "small">Cloning the Instagram application</span></h2>
 		  				</div>
 	  					<div id = "projectdesc">

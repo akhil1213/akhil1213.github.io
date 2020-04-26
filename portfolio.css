@@ -11,14 +11,16 @@ section.about {
   /*opacity:0.3;*/
   padding: 400px;
   padding-top:70px;
-  /*opacity: 0.2*/
+  opacity: 0.2
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 #aboutme{
-	background-color:#1a1a1a;
+	/*background-color:#1a1a1a;*/
+  color:blue;
+  font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
 }
-body {
-  background-color: #0e518c;
+body {#
+  background-color: 0e518c;
   color:#dce3df;
   /*opacity:0.3;*/
   /*background-image: url("https://images.pexels.com/photos/2129814/pexels-photo-2129814.png?cs=srgb&dl=architecture-bridge-buildings-2129814.jpg&fm=jpg");*/
