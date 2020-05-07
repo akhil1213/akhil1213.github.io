@@ -20,8 +20,8 @@ section.about {
   font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
 }
 body {#
-  background-color: 0e518c;
-  color:#dce3df;
+  background-color: 0e518c !important;
+  color:#dce3df !important;
   /*opacity:0.3;*/
   /*background-image: url("https://images.pexels.com/photos/2129814/pexels-photo-2129814.png?cs=srgb&dl=architecture-bridge-buildings-2129814.jpg&fm=jpg");*/
   -moz-background-size: cover;
@@ -77,43 +77,52 @@ div{
 body{
 	background-color: #264d73;
 }
-.navbar{
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navcolor{
+  background-color: #333;
+}
+#menu ul li a{
+  color:white;
+}
+#menu ul li:hover{
+  background-color: #111 !important;
+}
+/*.navbar{
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
 
 }
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background-color: #333 !important;
 }
 #experience ul{
-	list-style-type: none;
+	list-style-type: none !important;
 }
 .navbar li {
-  float: right;
-  padding: 0px;
-  height:50px;
+  float: right !important;
+  padding: 0px !important;
+  height:50px !important;
 }
 .navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  display: block !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 14px 16px !important;
+  text-decoration: none !important;
 }
 .navbar li a:hover {
-  background-color: #111;
-}
+  background-color: #111 !important;
+} */
 #name{
-	font-family: "Georgia";
-	float:left;
-	color:red;
-	padding-left: 30px;
-	text-transform: uppercase;
+	font-family: "Georgia" !important;
+	float:left !important;
+	color:red !important;
+	padding-left: 30px !important;
+	text-transform: uppercase !important;
 }
 span{
 	font-size: 30px;
@@ -148,14 +157,12 @@ span{
 	margin-left:20%;
 }
 fieldset{
-    border: 3px solid lightgray;
-
-
+    border: 3px solid lightgray !important;
 }
 legend{
-	font-size: 18px;
-	color: blue;
-	font-weight: bolder;
+	font-size: 18px !important;
+	color: #34a8eb !important;
+	font-weight: bolder !important;
 }
 .resume{
 	display:flex;
@@ -169,7 +176,7 @@ legend{
   	font-weight:bold;
 }
 .resume button:hover{
-	border-bottom: blue solid 2px;
+	border-bottom: #34a8eb solid 2px;
 }
 #dropdown li{
 	border-left: 3px solid black;
@@ -278,7 +285,5 @@ legend{
 #titleanddesc{
 	/*color:teal;*/
 }
-#picofproject{
-  
-}
+
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel = "stylesheet">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Space+Mono|Ubuntu&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,11 +24,34 @@
 					break;
 			}
 		}
+		function loaded(){
+			console.log("loaded yes sir")
+		}
 	</script>
 	<title></title>
 </head>
-<body>
-	<div class = "navbar">
+<body onload = "loaded()">
+	<nav class="navbar navbar-expand-lg navcolor">
+		  <div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav ml-auto navtextcolor">
+			  <li nav-item><a class="nav-link" href = "index.html">Welcome</a></li>
+			  <li nav-item><a class="nav-link" href = "#aboutme">About Me</a></li>
+			  <li nav-item><a class="nav-link" href = "#experience">Experience</a></li>
+			  <li class="nav-item">
+			  	<a class="nav-link" href="http://github.com/akhil1213"><img src="icons8-github-24.png"></a>
+			  </li>
+			  <li class="nav-item">
+			    <a class = "nav-item" href="https://www.linkedin.com/in/akhil-khanna1213/"><img src="icons8-linkedin-40.png"></a>
+			  </li>
+			</ul>
+		</div>
+
+	</nav>
+	<!-- <div class = "navbar">
 		<ul>
 			  <li id = "name"><div><p><span id = "big">A</span>.<span id = "big">K</span>.</p></div></li>
 			  <li><a href="http://github.com/akhil1213"><img src="icons8-github-24.png"></a></li>
@@ -37,7 +61,7 @@
 			  <li><a href = "#aboutme">About Me</a></li>
 			  <li><a href = "index.html">Welcome</a></li>
 		</ul>
-	</div>
+	</div> -->
 	<div class = "intro">
 		<div class = "nameinintro">
 			<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I create applications that improves and innovates human life</span><br></p>
@@ -125,11 +149,11 @@
 	</section>
 	<section class="experience">
 	  <div id = "experience">
-	  	<fieldset>
-	  		<legend>Where I've Worked</legend>
+	  	<fieldset class="border p-2">
+	  		<legend class="w-auto">Where I've Worked</legend>
 	  		<div class = "resume">
 	  			<div id = "jobs">
-			  		<ul id = "dropdown">
+			  		<ul id = "dropdown" class="list-unstyled">
 			  			<li><button id = "math" onclick = "displayExplanation('velocityexplanation')">Velocity CG</button></li>
 			  			<li><button id = "cs" onclick = "displayExplanation('csexplanation')">CS Tutor</button></li>
 			  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist Office</button></li>
@@ -217,51 +241,55 @@
 
 <div class = "projects">
     <!--Software Projects-->
-      <section class="row content-section text-center" id="software-section">
-        	<fieldset>
-	  			<legend>Projects</legend>
-	  			<div>
-	  				<div id = "projectheader">
-	  					<div id = "titleanddesc">
-		  					<div id = "title"><h2>Drag-In-Drop application<span id = "small">Optimizes time it takes for client info to get into C.R.M</span></h2>
-		  				</div>
-	  					<div id = "projectdesc">
-	  						<p>Technologies I used were Python-Django, AWS lamdba/s3, and textract. A forum pdf file of each client's information is dragged into the file upload input which is then converted into a png using the pdf2png api. Then this image is sent to AWS s3 using boto3, from there textract sends back key/value pairs of the forum. I then created an algorithm to extract the proper data from key/value pairs given to us from textract. On top of that, I verfied customers credit score using the credco api by sending the social security number of each client to their endpoint. All the extracted data was posted to the Salesforce CRM using SalesforceApi. Something's I learned was how to make python django's default storage to be s3 and how to set up boiler plate code for python django. I learned how to create models in django where our model contained the photo file path. I did this all in one month.</p>
+      <section id="software-section">
+        	<fieldset class="border p-2">
+	  			<legend class = "w-auto">Projects</legend>
+  				<div class="container">
+  					<div class ="row">
+	  					<div class = "col-6">
+	  						<h2>Drag-And-Drop application(Internship)</h2>
 	  					</div>
+	  				</div>
+  					<div class = "row">
+  						<div class = "col-md-8 col-sm-6">
+								<p>Technologies I used were Python-Django, AWS lamdba/s3, and textract. A forum pdf file of each client's information is dragged into the file upload input using JavaScript which is then converted into a png using the pdf2png api. Then this image is sent to AWS s3 using boto3,and then textract sends back key/value pairs of the forum. I then created an algorithm to extract the proper data from key/value pairs given to us from textract. On top of that, I verified customers credit score using the credco api by sending the social security number of each client to their endpoint. I also did a background check using Clear Logic api's and retrived a person/business report.  All the extracted data was posted to the Salesforce CRM using SalesforceApi. I am currently working on converting the frontend from plain vanilla Html/Css to React.</p>
+  						</div>
+  						<div class = "col-md-4 col-sm-6">
+							<video width="260" height="315" src="dragndrop.mp4" frameborder="0" controls muted allowfullscreen></video>
+						</div>
   					</div>
-  					<div id = "picofproject">
-  						<video width="560" height="315" src="dragndrop.mp4" frameborder="0" controls allowfullscreen></video>
+  				</div>
+	  			<div class = "container">
+	  				<div class="row">
+		  				<div class="col-md-6 col-sm-3"><h2>Instagram:</h2></div>
+		  			</div>
+	  				<div class="row justify-content-end">
+  						<div class = "col-md-4">
+  							<p>Working on cloning the Instagram app using React-Native, Redux, and Sqlite. Figuring out the database schema of Instagram as I progress the cloned application. Adding a comment has it's own view and the input field is all the way on the bottom. After clicking on the input, the keyboard pops up and covers the input field so I took care of that and moved the input right above the keyboard using animations. As of now, I'm figuring out the db schema so when a user loads up his feed page, the photos and comments he's liked before show up as liked and vica versa.</p>
+  						</div>
+  						<div class = "col-md-4">
+							<video width="200" height="300" src="InstagramClone.mp4" frameborder="0" controls allowfullscreen></video>
+						</div>
+						<div class = "col-md-4">
+							<img src = "igdb.jpeg" width = "300px" height = "300px">
+						</div>
   					</div>
 	  			</div>
-	  			<div>
-	  				<div id = "projectheader">
-	  					<div id = "titleanddesc">
-		  					<div id = "title"><h2>Instagram:<span id = "small">Cloning the Instagram application</span></h2>
-		  				</div>
-	  					<div id = "projectdesc">
-	  						<p>Working on cloning the Instagram app using React-Native, Redux, and Sqlite. Figuring out the database schema of Instagram as I progress the cloned application. Querying each users likes by structuring a Liked-Images table in SQL is what I'm working on as of now because there isn't an array datatype in sqlite.</p>
+	  			<div class="container">
+  					<div class ="row">
+	  					<div class = "col-12">
+	  						<h2>Invie:(Social media platform for Investors to find companies to Invest in)</h2>
 	  					</div>
+	  				</div>
+  					<div class = "row">
+  						<div class = "col-md-8 col-sm-6">
+								<p>Worked on a team of four students to create a web app using Angular, mongoDB, nodeJS, and the express framework. The website was designed to connect investors and Companies. Responsible for implementing the login/signup page, feed page, settings page, and the investors page using HTML, CSS, TypeScript. As well as connecting the frontend to the backend using express routes to make get,post,put, and delete requests to the mongoDB running inside the backend server. Mongoose was used to connect and send queries to the mongoDB instance.</p>
+  						</div>
+  						<div class = "col-md-4 col-sm-6">
+							<img src = "inviewebsite.png" width = "300" height = "300">
+						</div>
   					</div>
-  					<div id = "picofproject">
-  						<video width="80%" height="315" src="InstagramClone.mp4" frameborder="0" controls allowfullscreen></video>
-  					</div>
-  					<div id = "picofproject">
-  						<img src = "igdb.jpeg" width = "50%" height = "80%">
-  					</div>
-	  			</div>
-	  			<div>
-	  				<div id = "projectheader">
-	  					<div id = "titleanddesc">
-		  					<div id = "title"><h2>Invie:<span id = "small">Social media platform for Investors to find companies to Invest in</span></h2>
-		  				</div>
-	  					<div id = "projectdesc">
-	  						<p>Worked on a team of four students to create a web app using Angular, mongoDB, nodeJS, and the express framework. The website was designed to connect investors and Companies. Responsible for implementing the login/signup page, feed page, settings page, and the investors page using HTML, CSS, TypeScript. As well as connecting the frontend to the backend using express routes to make get,post,put, and delete requests to the mongoDB running inside the backend server. Mongoose was used to connect and send queries to the mongoDB instance.</p>
-	  					</div>
-  					</div>
-  					<div id = "picofproject">
-  						<img src = "inviewebsite.png" width = "70%" height = "90%">
-  					</div>
-	  			</div>
+  				</div>
 	  		</fieldset>
       </section>
 </div>
@@ -273,7 +301,7 @@
                       <h2>
                         Akhil Khanna </br>
                         +1(917)-415-3421 </br>
-                        <a href="mailto:akhilkhanna1213@yahoo.com">akhilkhanna1213@yahoo.com</a>
+                        <a href="mailto:akhilkhanna1213@gmail.com">akhilkhanna1213@gmail.com</a>
                       </h2>
                        <p class="social-media">
                             <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
@@ -286,8 +314,8 @@
 
 
 </body>
-	<script>
-
-	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
