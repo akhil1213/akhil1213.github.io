@@ -3,8 +3,7 @@
 <head>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel = "stylesheet">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Space+Mono|Ubuntu&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<!-- JAVA ACSIRPT BELOW -->
 	<script type = "text/javascript">
 		function displayExplanation(id){
@@ -31,12 +30,12 @@
 	<title></title>
 </head>
 <body onload = "loaded()">
-	<nav class="navbar navbar-expand-lg navcolor">
+	<nav class="navbar fixed-top navbar-expand-lg navcolor" style="height:60px">
 		  <div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
+		    <span style="margin: auto" class= "navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
 		  </button>
-		  <div class="collapse navbar-collapse" id="menu">
+		  <div class="collapse navbar-collapse navcolor" id="menu">
 			<ul class="navbar-nav ml-auto navtextcolor">
 			  <li nav-item><a class="nav-link" href = "index.html">Welcome</a></li>
 			  <li nav-item><a class="nav-link" href = "#aboutme">About Me</a></li>
@@ -62,24 +61,26 @@
 			  <li><a href = "index.html">Welcome</a></li>
 		</ul>
 	</div> -->
-	<div class = "intro">
-		<div class = "nameinintro">
-			<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I create applications that improves and innovates human life</span><br></p>
+	<section class="introduction">
+		<div class = "intro">
+			<div class = "nameinintro">
+				<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I create applications that improves and innovates human life</span><br></p>
+			</div>
+			<div class = "introdescription">
+					<p>I am a Bachelor student in Computer Science at Queens College. I'm one semester away from completing my Bachelors degree in Computer Science and a Math minor.</p>
+			</div>
+			<div class = "getintouchbutton">
+					<div class = "email">
+							<a href = "mailto:akhilkhanna1213@gmail.com">Email</a>
+					</div>
+					<div class = "number">
+							<a href = "tel:+9174153421">Call/Text</a>
+					</div>
+			</div>
 		</div>
-		<div class = "introdescription">
-				<p>I am a Bachelor student in Computer Science at Queens College. I'm one semester away from completing my Bachelors degree in Computer Science and a Math minor.</p>
-		</div>
-		<div class = "getintouchbutton">
-				<div class = "email">
-						<a href = "mailto:akhilkhanna1213@gmail.com">Email</a>
-				</div>
-				<div class = "number">
-						<a href = "tel:+9174153421">Call/Text</a>
-				</div>
-		</div>
-	</div>
+	</section>
 	<section class = "about">
-	<div id ="aboutme">
+	<div>
 		<div>
 			<div>
 				<h2>About Me</h2>
@@ -156,7 +157,7 @@
 			  		<ul id = "dropdown" class="list-unstyled">
 			  			<li><button id = "math" onclick = "displayExplanation('velocityexplanation')">Velocity CG</button></li>
 			  			<li><button id = "cs" onclick = "displayExplanation('csexplanation')">CS Tutor</button></li>
-			  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist Office</button></li>
+			  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist</button></li>
 			  		</ul>
 		  		</div>
 		  		<div id = "velocityexplanation">
@@ -248,7 +249,7 @@
   					<div class ="row">
 	  					<div class = "col-6">
 	  						<h2>Drag-And-Drop application(Internship)</h2>
-	  					</div>
+						</div>
 	  				</div>
   					<div class = "row">
   						<div class = "col-md-8 col-sm-6">
@@ -261,7 +262,8 @@
   				</div>
 	  			<div class = "container">
 	  				<div class="row">
-		  				<div class="col-md-6 col-sm-3"><h2>Instagram:</h2></div>
+						  <div class="col-md-3 col-sm-3"><h2>Instagram:</h2></div>
+						  <div class = "col-md-2 align-self-center"><a href="http://github.com/akhil1213/Instagram-Clone"><img src="icons8-github-24.png"></a></div>
 		  			</div>
 	  				<div class="row justify-content-end">
   						<div class = "col-md-4">
@@ -277,9 +279,12 @@
 	  			</div>
 	  			<div class="container">
   					<div class ="row">
-	  					<div class = "col-12">
-	  						<h2>Invie:(Social media platform for Investors to find companies to Invest in)</h2>
-	  					</div>
+	  					<div class = "col-md-3">
+	  						<h2>Invie:</h2>
+						</div>
+						<div class = "col-md-2 align-self-center">
+							<a href="http://github.com/akhil1213/Instagram-Clone"><img src="icons8-github-24.png"></a>
+						</div>
 	  				</div>
   					<div class = "row">
   						<div class = "col-md-8 col-sm-6">
