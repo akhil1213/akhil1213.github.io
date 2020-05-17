@@ -127,6 +127,9 @@ div{
 body{
 	background-color: #264d73;
 }
+#navbar{
+  color:black;
+}
 .navcolor{
   background-image: url("pexels-photo-450055.jpeg");
 }
@@ -338,7 +341,7 @@ section.inroduction{
 #titleanddesc{
 	/*color:teal;*/
 }
-#projectImage{
+.projectImage{
     animation-name: bounceInRight;
     animation-timing-function: ease-in-out;
     animation-duration: 4.5s;

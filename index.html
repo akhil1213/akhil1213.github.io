@@ -9,10 +9,10 @@
 </head>
 <body onload = "loaded()">
 	<section id = "intro" class="introduction">
-		<nav id="navbar" class="navbar navbar-expand-lg navcolor" style="height:60px">
+		<nav id="navbar" class="navbar navbar-expand-lg navcolor" style="height:60px;color:black">
 			<div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span style="margin: auto" class= "navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
+			  <span style="margin: auto" class= "navbar-toggler-icon"><img src = "assets/images/iconfinder_menu-alt_134216.png"></span>
 			</button>
 			<div class="collapse navbar-collapse navcolor" id="menu">
 			  <ul class="navbar-nav ml-auto navtextcolor">
@@ -28,10 +28,10 @@
 			  </ul>
 		  </div>
 	  	</nav>
-		<nav id="fixed" class="navbar fixed-top navbar-expand-lg navcolor" style="height:60px;display:hidden">
+		<nav id="navbar" class="navbar fixed-top navbar-expand-lg navcolor" style="height:60px;color:black">
 			<div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			  <span style="margin: auto" class= "navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
+			  <span style="margin: auto" class= "navbar-toggler-icon"><img src = "assets/images/iconfinder_menu-alt_134216.png"></span>
 			</button>
 			<div class="collapse navbar-collapse navcolor" id="menu">
 			  <ul class="navbar-nav ml-auto navtextcolor">
@@ -67,7 +67,7 @@
 	<section class = "about">
 	<div>
 		<div>
-			<div>
+			<div id = "slideInLeft">
 				<h2>About Me</h2>
 					<p>I am currently seeking a Software Engineer Internship. I have been working on several projects in various fields of Computer Science but have been focusing on Data Science and Web/Mobile development. I have dived into all of these fields mainly using technologies such as React, React-Native, Python-Django and libraries such as pandas, seaborn, sklearn respectively. I am proficient in Linux, Windows, and Mac operating systems. For any further questions, please feel free to <a href = "">contact</a> me.</p>
 					<p>I am currently a computer science major at Queens College. In the last two years of my college experience, I have remained focused in understanding programming languages and tools. I consider myself as an ambitious student looking to gain experience in the field of computer science.
@@ -305,6 +305,7 @@
 				  <script src="assets/js/bootstrap.min.js"></script>
 				  <script src="assets/js/backstretch.min.js"></script>
 				  <script src="assets/slideshow.js"></script>
+				  <script src="assets/positionOfSections.js"></script>
 				  <script src="assets/vanillajs.js"></script>
 </body>
 </html>
