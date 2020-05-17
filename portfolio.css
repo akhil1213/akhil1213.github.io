@@ -1,3 +1,4 @@
+
 section.about {
   /* background-color: #e8e8e8; */
   background-image: url("https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -11,6 +12,58 @@ section.about {
   /* opacity: 0.2 */
   /* filter: alpha(opacity=50); For IE8 and earlier */
   color:white
+}
+.images{
+    position:absolute;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+}
+.top{
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4.5s;
+    animation-direction: alternate;
+}
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity:1;
+  }
+  70% {
+    opacity:0.8;
+  }
+  80% {
+    opacity:0.6;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+#cf4a img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 0;
+}
+
+/* section.introduction{
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+} */
+section.introduction{
+  position: relative; z-index: 0; background: none; top:0;color:white
 }
 #aboutme{
 	/*background-color:#1a1a1a;*/
@@ -285,5 +338,26 @@ section.inroduction{
 #titleanddesc{
 	/*color:teal;*/
 }
+#projectImage{
+    animation-name: bounceInRight;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4.5s;
+}
+@keyframes bounceInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateX(-30px);
+  }
+  80% {
+     transform: translateX(10px);
+  }
+  100% {
+     transform: translateX(0);
+  }
+} 
 
 

@@ -4,64 +4,49 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel = "stylesheet">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<!-- JAVA ACSIRPT BELOW -->
-	<script type = "text/javascript">
-		function displayExplanation(id){
-			document.getElementById(id).style.display = "block";
-			switch(id){
-				case 'velocityexplanation':
-					document.getElementById('csexplanation').style.display = "none";
-					document.getElementById('dentistexplanation').style.display = "none";
-					break;
-				case 'csexplanation':
-					document.getElementById('velocityexplanation').style.display = "none";
-					document.getElementById('dentistexplanation').style.display = "none";
-					break;
-				case 'dentistexplanation':
-					document.getElementById('velocityexplanation').style.display = "none";
-					document.getElementById('csexplanation').style.display = "none";
-					break;
-			}
-		}
-		function loaded(){
-			console.log("loaded yes sir")
-		}
-	</script>
-	<title></title>
+	<!-- JAVASCRIPT BELOW --><!-- Javascript files -->
+	<title>Akhil's Portfolio</title>
 </head>
 <body onload = "loaded()">
-	<nav class="navbar fixed-top navbar-expand-lg navcolor" style="height:60px">
-		  <div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span style="margin: auto" class= "navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
-		  </button>
-		  <div class="collapse navbar-collapse navcolor" id="menu">
-			<ul class="navbar-nav ml-auto navtextcolor">
-			  <li nav-item><a class="nav-link" href = "index.html">Welcome</a></li>
-			  <li nav-item><a class="nav-link" href = "#aboutme">About Me</a></li>
-			  <li nav-item><a class="nav-link" href = "#experience">Experience</a></li>
-			  <li class="nav-item">
-			  	<a class="nav-link" href="http://github.com/akhil1213"><img src="icons8-github-24.png"></a>
-			  </li>
-			  <li class="nav-item">
-			    <a class = "nav-item" href="https://www.linkedin.com/in/akhil-khanna1213/"><img src="icons8-linkedin-40.png"></a>
-			  </li>
-			</ul>
-		</div>
-
-	</nav>
-	<!-- <div class = "navbar">
-		<ul>
-			  <li id = "name"><div><p><span id = "big">A</span>.<span id = "big">K</span>.</p></div></li>
-			  <li><a href="http://github.com/akhil1213"><img src="icons8-github-24.png"></a></li>
-			  <li id="linkedin"><a href="https://www.linkedin.com/in/akhil-khanna1213/"><img src="icons8-linkedin-40.png"></a></li>
-
-			  <li><a href = "#experience">Experience</a></li>
-			  <li><a href = "#aboutme">About Me</a></li>
-			  <li><a href = "index.html">Welcome</a></li>
-		</ul>
-	</div> -->
-	<section class="introduction">
+	<section id = "intro" class="introduction">
+		<nav id="navbar" class="navbar navbar-expand-lg navcolor" style="height:60px">
+			<div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span style="margin: auto" class= "navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
+			</button>
+			<div class="collapse navbar-collapse navcolor" id="menu">
+			  <ul class="navbar-nav ml-auto navtextcolor">
+				<li nav-item><a class="nav-link" href = "index.html">Welcome</a></li>
+				<li nav-item><a class="nav-link" href = "#aboutme">About Me</a></li>
+				<li nav-item><a class="nav-link" href = "#experience">Experience</a></li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://github.com/akhil1213"><img src="assets/images/icons8-github-24.png"></a>
+				</li>
+				<li class="nav-item">
+				  <a class = "nav-item" href="https://www.linkedin.com/in/akhil-khanna1213/"><img src="assets/images/icons8-linkedin-40.png"></a>
+				</li>
+			  </ul>
+		  </div>
+	  	</nav>
+		<nav id="fixed" class="navbar fixed-top navbar-expand-lg navcolor" style="height:60px;display:hidden">
+			<div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span style="margin: auto" class= "navbar-toggler-icon"><img src = "iconfinder_menu-alt_134216.png"></span>
+			</button>
+			<div class="collapse navbar-collapse navcolor" id="menu">
+			  <ul class="navbar-nav ml-auto navtextcolor">
+				<li nav-item><a class="nav-link" href = "index.html">Welcome</a></li>
+				<li nav-item><a class="nav-link" href = "#aboutme">About Me</a></li>
+				<li nav-item><a class="nav-link" href = "#experience">Experience</a></li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://github.com/akhil1213"><img src="assets/images/icons8-github-24.png"></a>
+				</li>
+				<li class="nav-item">
+				  <a class = "nav-item" href="https://www.linkedin.com/in/akhil-khanna1213/"><img src="assets/images/icons8-linkedin-40.png"></a>
+				</li>
+			  </ul>
+		  </div>
+	  	</nav>
 		<div class = "intro">
 			<div class = "nameinintro">
 				<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I create applications that improves and innovates human life</span><br></p>
@@ -263,7 +248,7 @@
 	  			<div class = "container">
 	  				<div class="row">
 						  <div class="col-md-3 col-sm-3"><h2>Instagram:</h2></div>
-						  <div class = "col-md-2 align-self-center"><a href="http://github.com/akhil1213/Instagram-Clone"><img src="icons8-github-24.png"></a></div>
+						  <div class = "col-md-2 align-self-center"><a href="http://github.com/akhil1213/Instagram-Clone"><img src="assets/images/icons8-github-24.png"></a></div>
 		  			</div>
 	  				<div class="row justify-content-end">
   						<div class = "col-md-4">
@@ -273,7 +258,7 @@
 							<video width="200" height="300" src="InstagramClone.mp4" frameborder="0" controls allowfullscreen></video>
 						</div>
 						<div class = "col-md-4">
-							<img src = "igdb.jpeg" width = "300px" height = "300px">
+							<img src = "assets/images/igdb.jpeg" width = "300px" height = "300px">
 						</div>
   					</div>
 	  			</div>
@@ -283,7 +268,7 @@
 	  						<h2>Invie:</h2>
 						</div>
 						<div class = "col-md-2 align-self-center">
-							<a href="http://github.com/akhil1213/Instagram-Clone"><img src="icons8-github-24.png"></a>
+							<a href="http://github.com/akhil1213/Instagram-Clone"><img src="assets/images/icons8-github-24.png"></a>
 						</div>
 	  				</div>
   					<div class = "row">
@@ -291,7 +276,7 @@
 								<p>Worked on a team of four students to create a web app using Angular, mongoDB, nodeJS, and the express framework. The website was designed to connect investors and Companies. Responsible for implementing the login/signup page, feed page, settings page, and the investors page using HTML, CSS, TypeScript. As well as connecting the frontend to the backend using express routes to make get,post,put, and delete requests to the mongoDB running inside the backend server. Mongoose was used to connect and send queries to the mongoDB instance.</p>
   						</div>
   						<div class = "col-md-4 col-sm-6">
-							<img src = "inviewebsite.png" width = "300" height = "300">
+							<img src = "assets/images/inviewebsite.png" id = "projectImage"width = "300" height = "300">
 						</div>
   					</div>
   				</div>
@@ -315,12 +300,11 @@
                         </p>
                       <h5>Mar. 26 2019</h5>    
                     </div>
-                  </section>        </div>
-
-
-</body>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+				  </section>        </div>
+				  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+				  <script src="assets/js/bootstrap.min.js"></script>
+				  <script src="assets/js/backstretch.min.js"></script>
+				  <script src="assets/slideshow.js"></script>
+				  <script src="assets/vanillajs.js"></script>
 </body>
 </html>
