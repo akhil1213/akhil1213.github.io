@@ -346,6 +346,16 @@ section.inroduction{
     animation-timing-function: ease-in-out;
     animation-duration: 4.5s;
 }
+.fromRight{
+  animation-name: bounceInRight;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2.5s;
+}
+.fromBottom{
+  animation-name: bounceInBottom;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2.5s;
+}
 @keyframes bounceInRight {
   0% {
      opacity: 0;
@@ -362,5 +372,24 @@ section.inroduction{
      transform: translateX(0);
   }
 } 
+@keyframes bounceInBottom {
+  0% {
+     opacity: 0;
+     transform: translateY(2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateY(-30px);
+  }
+  80% {
+     transform: translateY(10px);
+  }
+  100% {
+     transform: translateY(0);
+  }
+} 
+.hidden{
+  display:none;
+}
 
 

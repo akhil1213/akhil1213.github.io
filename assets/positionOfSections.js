@@ -8,6 +8,7 @@ $(document).ready(function() {
         //make the section initially hidden.
         if(bottomPos >= position.top ){
             $('#slideInLeft').addClass("projectImage")
+            $('#slideInLeft').removeClass("hidden")
             console.log("bottomPos >= top pos of about me sec so trigger!")
         }
     });

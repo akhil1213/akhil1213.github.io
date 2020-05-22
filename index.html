@@ -5,9 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<!-- JAVASCRIPT BELOW --><!-- Javascript files -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>Akhil's Portfolio</title>
 </head>
-<body onload = "loaded()">
+<body data-aos-duration="1000" data-aos-easing="1500"onload = "loaded()">
 	<section id = "intro" class="introduction">
 		<nav id="navbar" class="navbar navbar-expand-lg navcolor" style="height:60px;color:black">
 			<div class="navbar-brand" id = "name"><span id = "big">A</span>.<span id = "big">K</span>.</p></div>
@@ -48,13 +49,13 @@
 		  </div>
 	  	</nav>
 		<div class = "intro">
-			<div class = "nameinintro">
+			<div data-aos="fade-in" class = "nameinintro fromRight">
 				<p><span id = "green">Hi, my name is </span><br> <span id = "big">Akhil Khanna</span><br><span id = "gray">I create applications that improves and innovates human life</span><br></p>
 			</div>
-			<div class = "introdescription">
-					<p>I am a Bachelor student in Computer Science at Queens College. I'm one semester away from completing my Bachelors degree in Computer Science and a Math minor.</p>
+			<div data-aos="fade-in" class = "introdescription fromBottom">
+					<p>I graduated with a Bachelors of Arts in Computer Science at Queens College. I'm a web-developer, mobile developer, and data-science enthusiast.</p>
 			</div>
-			<div class = "getintouchbutton">
+			<div data-aos="fade-in" class = "getintouchbutton fromBottom">
 					<div class = "email">
 							<a href = "mailto:akhilkhanna1213@gmail.com">Email</a>
 					</div>
@@ -67,10 +68,11 @@
 	<section class = "about">
 	<div>
 		<div>
-			<div id = "slideInLeft">
+			<div data-aos="fade-right" data-aos-delay="50" >
+				<!-- class = "hidden" id = "slideInLeft" -->
 				<h2>About Me</h2>
 					<p>I am currently seeking a Software Engineer Internship. I have been working on several projects in various fields of Computer Science but have been focusing on Data Science and Web/Mobile development. I have dived into all of these fields mainly using technologies such as React, React-Native, Python-Django and libraries such as pandas, seaborn, sklearn respectively. I am proficient in Linux, Windows, and Mac operating systems. For any further questions, please feel free to <a href = "">contact</a> me.</p>
-					<p>I am currently a computer science major at Queens College. In the last two years of my college experience, I have remained focused in understanding programming languages and tools. I consider myself as an ambitious student looking to gain experience in the field of computer science.
+					<p>I still consider myself as an ambitious student looking to gain experience in the field of computer science.
 						While pursing my education, I have been known for my ability to work well with my peers. I enjoy challenging myself and demonstrate strength in problem solving skills. In order to accomplish my goals, I stay organized and focused with tasks on hand.
 						Often, I find myself exploring multiple different technologies and trying to understand how they were implemented and most importantly fabricated.
 					</p>
@@ -80,7 +82,7 @@
 	      <div class = "topOfInterests">
 			       <div class = "leftInterest">
 				        <div class = "view-body">
-				              <div class = "view-item">
+				              <div data-aos="fade-in" class = "view-item">
 				                  <p>React/React-Native/Redux</p>
 				                  <progress max="100" value="70" class="jquery">
 							            <div class="progress-bar">
@@ -88,7 +90,7 @@
 							            </div>
 	        					   </progress>
 				              </div>
-				              <div class = "view-item">
+				              <div data-aos="fade-in" class = "view-item">
 				                  <p>Sklearn/Pandas/Seaborn</p>
 				                  <progress max="100" value="40" class="jquery">
 							            <div class="progress-bar">
@@ -96,7 +98,7 @@
 							            </div>
 	        					   </progress>
 				              </div>
-				              <div class = "view-item">
+				              <div data-aos="fade-in" class = "view-item">
 				                  <p>Python/Python-Django</p>
 				                  <progress max="100" value="65" class="jquery">
 							            <div class="progress-bar">
@@ -104,7 +106,7 @@
 							            </div>
 	        					   </progress>
 				              </div>
-				              <div class = "view-item">
+				              <div data-aos="fade-in" class = "view-item">
 				                  <p>Java (Leetcode questions)</p>
 				                  <progress max="100" value="70" class="jquery">
 							            <div class="progress-bar">
@@ -112,7 +114,7 @@
 							            </div>
 	        					   </progress>
 				              </div>
-				              <div class = "view-item">
+				              <div data-aos="fade-in" class = "view-item">
 				                  <p>Sqlite/mongoDB/Realm</p>
 				                  <progress max="100" value="60" class="jquery">
 							            <div class="progress-bar">
@@ -120,7 +122,7 @@
 							            </div>
 	        					   </progress>
 				              </div>
-				              <div class = "view-item">
+				              <div data-aos="fade-in" class = "view-item">
 				                  <p>Selenium</p>
 				                  <progress max="100" value="50" class="jquery">
 							            <div class="progress-bar">
@@ -180,19 +182,19 @@
 						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
 					</div>
 					<div id = "resumelist">
-							<ul id = "">
-									<li>
-										Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.
-									</li>
-									<li>
-										Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.
-									</li>
-									<li>
-										Helped students with debugging programs and understanding project requirements.
-									</li>
-									<li>
-										Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.
-									</li>
+							<ul>
+								<li>
+									Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.
+								</li>
+								<li>
+									Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.
+								</li>
+								<li>
+									Helped students with debugging programs and understanding project requirements.
+								</li>
+								<li>
+									Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.
+								</li>
 							</ul>
 					</div>
 		  		</div>
@@ -202,21 +204,20 @@
 						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
 					</div>
 					<div id = "resumelist">
-							<ul >
-									<li>
-										Developed a process which helped maintain patient records effectively using SQL.
-									</li>
-									<li>
-										Assisted a dentist during procedures by handing them instruments and kept patients mouths dry by using suction hoses.
-									</li>
-									<li>
-										<p>Greeted patients inside the office making sure they felt comfortable and welcomed</p>
-									</li>
-									<li>
-										<p>Instructed patients in proper oral hygiene after their treatment.</p>
-									</li>
-
-							</ul>
+						<ul>
+							<li>
+								Developed a process which helped maintain patient records effectively using SQL.
+							</li>
+							<li>
+								Assisted a dentist during procedures by handing them instruments and kept patients mouths dry by using suction hoses.
+							</li>
+							<li>
+								<p>Greeted patients inside the office making sure they felt comfortable and welcomed</p>
+							</li>
+							<li>
+								<p>Instructed patients in proper oral hygiene after their treatment.</p>
+							</li>
+						</ul>
 					</div>
 		  		</div>
 	  		</div>
@@ -307,5 +308,12 @@
 				  <script src="assets/slideshow.js"></script>
 				  <script src="assets/positionOfSections.js"></script>
 				  <script src="assets/vanillajs.js"></script>
+				  <script src="assets/js/aos.js"></script>
+				  <script>
+					AOS.init({
+						duration:1200,
+						once: true,
+					});
+				  </script>
 </body>
 </html>
