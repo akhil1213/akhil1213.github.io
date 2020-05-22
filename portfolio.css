@@ -221,14 +221,16 @@ legend{
 	display:flex;
 	flex:row;
 }
-.resume button{
+.jobs button{
 	background: none;
   border: none;
   padding: 0;
-  	color:aqua;
-  	font-weight:bold;
+  color:aqua;
+  font-weight:bold;
+  margin-top:20%;
+  width: fit-content;
 }
-.resume button:hover{
+.jobs button:hover{
 	border-bottom: #34a8eb solid 2px;
 }
 #dropdown li{

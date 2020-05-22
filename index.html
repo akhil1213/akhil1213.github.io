@@ -138,50 +138,41 @@
 	<section class="experience">
 	  <div id = "experience">
 	  	<fieldset class="border p-2">
-	  		<legend class="w-auto">Where I've Worked</legend>
-	  		<div class = "resume">
-	  			<div id = "jobs">
-			  		<ul id = "dropdown" class="list-unstyled">
-			  			<li><button id = "math" onclick = "displayExplanation('velocityexplanation')">Velocity CG</button></li>
-			  			<li><button id = "cs" onclick = "displayExplanation('csexplanation')">CS Tutor</button></li>
-			  			<li><button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dentist</button></li>
-			  		</ul>
-		  		</div>
-		  		<div id = "velocityexplanation">
-		  			<div id = "positionanddate">
-						<div id = "position"><h2>Software Engineer<span>@ VelocityCG </span></h2></div>
-						<div id = "resumedate"><p>January 2020 - current</p></div>
-					</div>
-						<div id = "resumelist">
-								<ul id = "">
-										<li>
-											<p>Incorporate modern software into the broker/underwriter application process to optimize the time for underwriters to fund companies</p>
-										</li>
-										<li>
-											<p>Developed a website using the Python Django framework that allows processors to drag and drop files which were read by AWS textract and the extracted data was sent to our AWS S3 bucket as well as the Salesforce CRM </p>
-										</li>
-										<li>
-											<p>Designed application flowcharts and network diagrams to Credco API to prove the security of our software</p>
-										</li>
-										<li>
-											<p>Extracted, analyzed, and modified key value pairs received from Textract and used the Trie data structure to store all the text and traverse through it.</p>
-										</li>
-										<li>
-											<p>Developed an Algorithm that traversed through locations of key’s on the forum to figure out the representation of each key</p>
-										</li>
-										<li>
-											<p>Extracted social security number’s of a client and sent it to Credco’s endpoint to retrieve the clients social security number</p>
-										</li>
-
-								</ul>
+			<legend class="w-auto">Where I've Worked</legend>
+	  		<div class = "container">
+				<div class="row">
+					<div class="col-md-3 order-1">
+						<div class="container">
+							<div class="jobs d-flex flex-column space-between">
+								<button id = "math" onclick = "displayExplanation('velocityexplanation')">Velocity Capital Group</button>
+								<button id = "cs" onclick = "displayExplanation('csexplanation')">Computer Science Tutor</button>
+								<button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dental Assistant</button>
+							</div>
 						</div>
-		  		</div>
-		  		<div id = "csexplanation">
-		  			<div id = "positionanddate">
-		  				<div id = "position"><h2>CS Tutor <span>@ Queens College </span></h2></div>
-						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
 					</div>
+					<div class="col-md-6 order-md-2 order-sm-3" id = "velocityexplanation">
 					<div id = "resumelist">
+						<div id = "position"><b>Software Engineer Internship</b></div>
+							<p>Incorporate modern software into the broker/underwriter application process to optimize the time for underwriters to fund companies</p>
+							<p>Developed a website using the Python Django framework that allows processors to drag and drop files which were read by AWS textract and the extracted data was sent to our AWS S3 bucket as well as the Salesforce CRM </p>
+							<p>Designed application flowcharts and network diagrams to Credco API to prove the security of our software</p>
+							<p>Extracted, analyzed, and modified key value pairs received from Textract and used the Trie data structure to store all the text and traverse through it.</p>
+							<p>Developed an Algorithm that traversed through locations of key’s on the forum to figure out the representation of each key</p>
+							<p>Extracted social security number’s of a client and sent it to Credco’s endpoint to retrieve the clients social security number</p>
+						</div>
+					</div>
+					<div class="col-md-3 order-md-3 order-sm-2">
+						<div id = "positionanddate">
+							<div id = "position"><h2>Velocity Capital Group</span></h2></div>
+							<div id = "resumedate"><p>January 2020 - current</p></div>
+						</div>
+					</div>
+					<div id = "csexplanation">
+						<div id = "positionanddate">
+							<div id = "position"><h2>CS Tutor <span>@ Queens College </span></h2></div>
+							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+						</div>
+						<div id = "resumelist">
 							<ul>
 								<li>
 									Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.
@@ -196,31 +187,32 @@
 									Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.
 								</li>
 							</ul>
+						</div>
 					</div>
-		  		</div>
-		  		<div id = "dentistexplanation">
-		  			<div id = "positionanddate">
-						<div id = "position"><h2>Dental Assistant<span>@ Great Neck Dental </span></h2></div>
-						<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+					<div id = "dentistexplanation">
+						<div id = "positionanddate">
+							<div id = "position"><h2>Dental Assistant<span>@ Great Neck Dental </span></h2></div>
+							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+						</div>
+						<div id = "resumelist">
+							<ul>
+								<li>
+									Developed a process which helped maintain patient records effectively using SQL.
+								</li>
+								<li>
+									Assisted a dentist during procedures by handing them instruments and kept patients mouths dry by using suction hoses.
+								</li>
+								<li>
+									<p>Greeted patients inside the office making sure they felt comfortable and welcomed</p>
+								</li>
+								<li>
+									<p>Instructed patients in proper oral hygiene after their treatment.</p>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div id = "resumelist">
-						<ul>
-							<li>
-								Developed a process which helped maintain patient records effectively using SQL.
-							</li>
-							<li>
-								Assisted a dentist during procedures by handing them instruments and kept patients mouths dry by using suction hoses.
-							</li>
-							<li>
-								<p>Greeted patients inside the office making sure they felt comfortable and welcomed</p>
-							</li>
-							<li>
-								<p>Instructed patients in proper oral hygiene after their treatment.</p>
-							</li>
-						</ul>
-					</div>
-		  		</div>
-	  		</div>
+				</div>
+			</div>
 	  	</fieldset>
 	  </div>
 	  </div>
