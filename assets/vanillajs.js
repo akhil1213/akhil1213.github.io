@@ -1,7 +1,12 @@
 function displayExplanation(toshow){
     console.log(toshow)
-    document.querySelectorAll(toshow).forEach(element => element.style.display = "block")
-        
+    showing = document.querySelectorAll(toshow)
+    var firstBottom = true
+    showing.forEach(element => {
+        element.style.display = "block"
+        firstBottom ? element.classList.add("fromBottom") : element.classList.add("fromRight")
+        firstBottom = false
+    })
     var jobInfos;
     switch(toshow){
         case '.velocityexplanation':
