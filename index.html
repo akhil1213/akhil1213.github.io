@@ -141,18 +141,20 @@
 			<legend class="w-auto">Where I've Worked</legend>
 	  		<div class = "container">
 				<div class="row">
-					<div class="col-md-3 order-1">
+					<div class="col-md-3 order-1 order-md-1 order-sm-1 order-xs-1">
 						<div class="container">
 							<div class="jobs d-flex flex-column space-between">
-								<button id = "math" onclick = "displayExplanation('velocityexplanation')">Velocity Capital Group</button>
-								<button id = "cs" onclick = "displayExplanation('csexplanation')">Computer Science Tutor</button>
-								<button id = "dentist" onclick = "displayExplanation('dentistexplanation')">Dental Assistant</button>
+								<button style="margin-top: 0" id="math" onclick = "displayExplanation('.velocityexplanation')">Velocity Capital Group</button>
+								<button id = "cs" onclick = "displayExplanation('.csexplanation')">Computer Science Tutor</button>
+								<button id = "dentist" onclick = "displayExplanation('.dentistexplanation')">Dental Assistant</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 order-md-2 order-sm-3" id = "velocityexplanation">
-					<div id = "resumelist">
-						<div id = "position"><b>Software Engineer Internship</b></div>
+					<div class="col-md-6 order-md-2 order-sm-3 velocityexplanation">
+						<div id = "resumelist">
+							<div id = "position">
+								<b>Software Engineer Internship</b>
+							</div>
 							<p>Incorporate modern software into the broker/underwriter application process to optimize the time for underwriters to fund companies</p>
 							<p>Developed a website using the Python Django framework that allows processors to drag and drop files which were read by AWS textract and the extracted data was sent to our AWS S3 bucket as well as the Salesforce CRM </p>
 							<p>Designed application flowcharts and network diagrams to Credco API to prove the security of our software</p>
@@ -161,18 +163,15 @@
 							<p>Extracted social security number’s of a client and sent it to Credco’s endpoint to retrieve the clients social security number</p>
 						</div>
 					</div>
-					<div class="col-md-3 order-md-3 order-sm-2">
+					<div class="col-md-3 order-md-3 order-sm-2 velocityexplanation">
 						<div id = "positionanddate">
 							<div id = "position"><h2>Velocity Capital Group</span></h2></div>
-							<div id = "resumedate"><p>January 2020 - current</p></div>
+							<div id = "resumedate"><p>January 2020 - present</p></div>
 						</div>
 					</div>
-					<div id = "csexplanation">
-						<div id = "positionanddate">
-							<div id = "position"><h2>CS Tutor <span>@ Queens College </span></h2></div>
-							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
-						</div>
+					<div class="col-md-6 order-md-2 order-sm-3 csexplanation">
 						<div id = "resumelist">
+							<div id="position"><b>Computer Science Tutor</b></div>
 							<ul>
 								<li>
 									Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.
@@ -189,12 +188,15 @@
 							</ul>
 						</div>
 					</div>
-					<div id = "dentistexplanation">
+					<div class="col-md-3 order-md-3 order-sm-2 csexplanation">
 						<div id = "positionanddate">
-							<div id = "position"><h2>Dental Assistant<span>@ Great Neck Dental </span></h2></div>
-							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+							<div id = "position"><h2>Queens College</span></h2></div>
+							<div id = "resumedate"><p>August 2018- December 2020</p></div>
 						</div>
+					</div>
+					<div class = "col-md-6 order-md-2 order-sm-3 dentistexplanation">
 						<div id = "resumelist">
+							<div id="position"><b>Dental Assistant (worked for my older sister)</b></div>
 							<ul>
 								<li>
 									Developed a process which helped maintain patient records effectively using SQL.
@@ -211,8 +213,15 @@
 							</ul>
 						</div>
 					</div>
+					<div class="col-md-3 order-md-3 order-sm-2 dentistexplanation">
+						<div id = "positionanddate">
+							<div id = "position"><h2>@ Great Neck Dental</h2></div>
+							<div id = "resumedate"><p>September 2018 - September 2019</p></div>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
 	  	</fieldset>
 	  </div>
 	  </div>

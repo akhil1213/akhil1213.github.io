@@ -239,7 +239,7 @@ legend{
 	/*color:teal;*/
 	font-weight:bold;
 }
-#csexplanation,#dentistexplanation{
+.csexplanation,.dentistexplanation{
 	display:none;
 }
 #resumedate{
