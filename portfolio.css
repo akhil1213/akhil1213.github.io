@@ -363,8 +363,24 @@ section.inroduction{
   animation-timing-function: ease-in-out;
   animation-duration: 2.5s;
 }
-section.experience .fromRight, .fromBottom, .fromLeft{
-    animation-duration: 0.8s;
+.fadeInForResume{
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+@keyframes fadeIn {
+  0%{
+    opacity:0
+  }
+  30%{
+    opacity:0.3
+  }
+  60%{
+    opacity:0.6
+  }
+  100%{
+    opacity:1
+  }
 }
 @keyframes bounceInLeft {
   0% {

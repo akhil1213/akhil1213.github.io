@@ -4,7 +4,7 @@ function displayExplanation(toshow){
     var firstBottom = true
     showing.forEach(element => {
         element.style.display = "block"
-        firstBottom ? element.classList.add("fromBottom") : element.classList.add("fromRight")
+        firstBottom ? element.classList.add("fadeInForResume") : element.classList.add("fromRight")
         firstBottom = false
     })
     var jobInfos;
