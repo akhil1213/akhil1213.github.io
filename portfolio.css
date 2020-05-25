@@ -1,24 +1,18 @@
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+body {
+	font: 300 15px/1.6 'Raleway', serif, sans-serif;
+	color: white;
+}
+
 section.about {
   /* background-color: #e8e8e8; */
-  background-image: url("https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: top center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed;
-  padding-top:70px;
-  /* opacity: 0.2 */
-  /* filter: alpha(opacity=50); For IE8 and earlier */
-  color:white
+  background: #F5F5F5;
+  color:#222; 
 }
-.images{
-    position:absolute;
-    z-index:-1;
-    width: 100%;
-    height: 100%;
-}
+
 .top{
     animation-name: cf4FadeInOut;
     animation-timing-function: ease-in-out;
@@ -70,54 +64,11 @@ section.introduction{
   color:white;
   font-family: "Oswald";
 }
-body {
-  font-family: "Oswald";
-  background-color: #166269 !important;
-  color:#dce3df !important;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: top center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+
+.avatar{
+  max-width:100%;
+  /* height:auto; */
 }
-progress[value] {
-  /* Reset the default appearance */
-  -webkit-appearance: none;
-  appearance: none;
-
-  width: 100px;
-  height: 10px;
-  margin-top:20px;
-  margin-left:14%;
-  position:absolute;
-}
-
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-
-progress[value]::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(
-      -45deg,
-      transparent 33%,
-      rgba(0, 0, 0, 0.1) 33%,
-      rgba(0, 0, 0, 0.1) 66%,
-      transparent 66%
-    ),
-    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-    -webkit-linear-gradient(left, #09c, #f44);
-
-  border-radius: 2px;
-  background-size: 35px 20px, 100% 100%, 100% 100%;
-}
-
 
 
 div{
@@ -230,6 +181,9 @@ legend{
   margin-top:20%;
   width: fit-content;
 }
+.active{
+	border-bottom: #34a8eb solid 2px;
+}
 .jobs button:hover{
 	border-bottom: #34a8eb solid 2px;
 }
@@ -298,11 +252,10 @@ section.inroduction{
 	margin-left: 30px;
 }
 .getintouchbutton a{
-		border: 2px solid aqua;
+		border: 2px solid black;
 		padding: 10px;
 		text-decoration: none;
-		color:aqua;
-
+		color:aqua
 }
 .getintouchbutton a:hover{
 	/*background-color:gray;*/
@@ -339,6 +292,29 @@ section.inroduction{
 	width:45%;
 	/*color:gray;*/
 
+}
+.headline{
+  margin-bottom:60px
+}
+.spaceFromTop{
+  margin-top:40px;
+}
+.skill-bar {
+	background: #C4C4C4;
+	display: table;
+	height: 4px;
+	width: 100%;
+	margin: 10px -2px 20px -2px;
+}
+
+.skill-bar .skill-rate-on {
+	background: #353535;
+}
+
+.skill-rate-on, .skill-rate-off {
+	display: table-cell;
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
 }
 #titleanddesc{
 	/*color:teal;*/
