@@ -9,7 +9,7 @@ $(document).ready(function() {
         if(bottomPos >= position.top ){
             $('#slideInLeft').addClass("projectImage")
             $('#slideInLeft').removeClass("hidden")
-            console.log("bottomPos >= top pos of about me sec so trigger!")
+            // console.log("bottomPos >= top pos of about me sec so trigger!")
         }
     });
 })

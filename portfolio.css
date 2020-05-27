@@ -1,6 +1,6 @@
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
 
 body {
 	font: 300 15px/1.6 'Raleway', serif, sans-serif;
@@ -56,9 +56,9 @@ section.about {
   background-repeat: no-repeat;
   background-size: cover; 
 } */
-section.introduction{
+/* section.introduction{
   position: relative; z-index: 0; background: none; top:0;color:white
-}
+} */
 #aboutme{
 	/*background-color:#1a1a1a;*/
   color:white;
@@ -80,6 +80,8 @@ body{
 }
 #navbar{
   color:black;
+  /* background-image:url("assets/images/pexels-photo-450055.jpeg"); */
+  max-height: 100%;
 }
 .navcolor{
   background-image: url("pexels-photo-450055.jpeg");
@@ -180,9 +182,6 @@ legend{
   font-weight:bold;
   margin-top:20%;
   width: fit-content;
-}
-.active{
-	border-bottom: #34a8eb solid 2px;
 }
 .jobs button:hover{
 	border-bottom: #34a8eb solid 2px;
@@ -406,8 +405,24 @@ section.inroduction{
      transform: translateY(0);
   }
 } 
+@media (max-width: 767px){
+ body {
+    text-align: center;
+  }
+  #socialProfiles{
+    margin-left:40%;
+  }
+  #big,#gray{
+    font-size:25px;
+  }
+}
 .hidden{
   display:none;
 }
 
-
+#math{
+  border-bottom:red;;
+}
+.backstretch{
+  height:100%;
+}
