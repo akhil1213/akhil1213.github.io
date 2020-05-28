@@ -1,5 +1,5 @@
 $(window).load(function() {
-   $('#loader-wrapper').css('z-index','-100000');
+   $('#loader-wrapper').css('display','none');
    $('#navbar').addClass('fixed-top')
 });
 $(document).ready(function() {
