@@ -72,6 +72,10 @@ section.about {
 html {
   scroll-behavior: smooth;
 }
+.navbar-collapse.in {
+  display: block !important;
+  background-image:url("assets/images/pexels-photo-450055.jpeg");
+}
 
 div{
 	margin-top: 0px;
