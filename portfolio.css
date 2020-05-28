@@ -4,9 +4,24 @@
 
 body {
 	font: 300 15px/1.6 'Raleway', serif, sans-serif;
-	color: white;
+  color: white;
+}
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background: #222222;
+  z-index: 1000;
 }
 
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
 section.about {
   /* background-color: #e8e8e8; */
   background: #F5F5F5;

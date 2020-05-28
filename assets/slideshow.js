@@ -1,5 +1,6 @@
 $(window).load(function() {
-   console.log("it loaded boy")
+   $('#loader-wrapper').css('z-index','-100000');
+   $('#navbar').addClass('fixed-top')
 });
 $(document).ready(function() {
     console.log("idk")
