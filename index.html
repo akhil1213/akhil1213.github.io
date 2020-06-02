@@ -119,7 +119,6 @@
 							<a class="nav-link" href="http://github.com/akhil1213" target="_blank"><img src="assets/images/icons8-github-24.png"></a>
 							<a class = "nav-item" href="https://www.linkedin.com/in/akhil-khanna1213/" target="_blank"><img src="assets/images/icons8-linkedin-40.png"></a>			
 						</div>
-				  
 					</div>
 				</div>
 
@@ -161,10 +160,10 @@
 								<b>Software Engineer Internship</b>
 							</div>
 							<p>Incorporate modern software into the broker/underwriter application process to optimize the time for underwriters to fund companies</p>
+							<p>Built a text extraction pipeline, to add information of each client to the Salesforce CRM within seconds compared to tedious manual entry.</p>
 							<p>Developed a website using the Python Django framework that allows processors to drag and drop files which were read by AWS textract and the extracted data was sent to our AWS S3 bucket as well as the Salesforce CRM </p>
 							<p>Designed application flowcharts and network diagrams to Credco API to prove the security of our software</p>
 							<p>Extracted, analyzed, and modified key value pairs received from Textract and used the Trie data structure to store all the text and traverse through it.</p>
-							<p>Developed an Algorithm that traversed through locations of key’s on the forum to figure out the representation of each key</p>
 							<p>Extracted social security number’s of a client and sent it to Credco’s endpoint to retrieve the clients social security number</p>
 						</div>
 					</div>
@@ -231,61 +230,100 @@
 	  </div>
 	  </div>
 	</section>
-<section id = "projects" data-aos="zoom-in-down">
+<section id = "projects">
 <div class = "projects">
     <!--Software Projects-->
         	<fieldset class="border p-2">
 	  			<legend class = "w-auto">Projects</legend>
   				<div class="container">
   					<div class ="row">
-	  					<div class = "col-6">
+	  					<!-- <div class = "col-6">
 	  						<h2>Drag-And-Drop application(Internship)</h2>
+						</div> -->
+						<!-- <div class = "col-md-4 col-sm-4">	
+					  	</div> -->
+  						<div data-aos = "fade-right" class = "projinfo col-md-4 col-md-4">
+							<a href="https://akhilvcg.pythonanywhere.com" target="_blank">
+								<img src="assets/images/velocitywebsite.png">
+								<div class="description">
+									<h2>
+										Drag-And-Drop to C.R.M
+									</h2>
+									<p>Frontend:ES6 Templates,JavaScript,JQuery,Bootstrap</p>
+									<p>Backend:AWS S3/Textract,Django-Models, Django-Views</p>
+								</div>
+							</a>
 						</div>
+						<div data-aos = "fade-up" class = "projinfo col-md-4 col-md-4">
+							<a href="https://github.com/akhil1213/Course-Chat" target="_blank">
+								<img  src="assets/images/coursechatpic.png">
+								<div class="description">
+									<h1>
+										Course-Chat
+									</h1>
+									<p>M.E.R.N,Redux,Socket.io</p>
+									<p>Allow students enrolled in the same class for a certain semester to chat with one another.</p>
+								</div>	
+							</a>
+						</div>
+						<div data-aos = "fade-left" class = "projinfo col-md-4 col-md-4">
+							<a href="https://github.com/akhil1213/Instagram-Clone" target="_blank">
+								<img src="assets/images/igpic.jpg">
+								<div class="description">
+									<h2>
+										Instagram Clone
+									</h2>
+									<p>React-Native, SQLITE, Realm, Redux</p>
+								</div>
+							</a>
+						</div>
+						
 	  				</div>
-  					<div class = "row">
-  						<div class = "col-md-8 col-sm-6">
-								<p>Technologies I used were Python-Django, AWS lamdba/s3, and textract. A forum pdf file of each client's information is dragged into the file upload input using JavaScript which is then converted into a png using the pdf2png api. Then this image is sent to AWS s3 using boto3,and then textract sends back key/value pairs of the forum. I then created an algorithm to extract the proper data from key/value pairs given to us from textract. On top of that, I verified customers credit score using the credco api by sending the social security number of each client to their endpoint. I also did a background check using Clear Logic api's and retrived a person/business report.  All the extracted data was posted to the Salesforce CRM using SalesforceApi. I am currently working on converting the frontend from plain vanilla Html/Css to React.</p>
-  						</div>
-  						<div class = "col-md-4 col-sm-6">
-							<video width="260" height="315" src="assets/images/dragndrop.mp4" frameborder="0" controls muted allowfullscreen></video>
-						</div>
-  					</div>
-  				</div>
-	  			<div class = "container">
-	  				<div class="row">
-						  <div class="col-md-3 col-sm-3"><h2>Instagram:</h2></div>
-						  <div class = "col-md-2 align-self-center"><a href="http://github.com/akhil1213/Instagram-Clone"><img src="assets/images/icons8-github-24.png"></a></div>
-		  			</div>
-	  				<div class="row justify-content-end">
-  						<div class = "col-md-4">
-  							<p>Working on cloning the Instagram app using React-Native, Redux, and Sqlite. Figuring out the database schema of Instagram as I progress the cloned application. Adding a comment has it's own view and the input field is all the way on the bottom. After clicking on the input, the keyboard pops up and covers the input field so I took care of that and moved the input right above the keyboard using animations. As of now, I'm figuring out the db schema so when a user loads up his feed page, the photos and comments he's liked before show up as liked and vica versa.</p>
-  						</div>
-  						<div class = "col-md-4">
-							<video width="200" height="300" src="assets/images/InstagramClone.mp4" frameborder="0" controls allowfullscreen></video>
-						</div>
-						<div class = "col-md-4">
-							<img src = "assets/images/igdb.jpeg" width = "300px" height = "300px">
-						</div>
-  					</div>
-	  			</div>
-	  			<div class="container">
-  					<div class ="row">
-	  					<div class = "col-md-3">
-	  						<h2>Invie:</h2>
-						</div>
-						<div class = "col-md-2 align-self-center">
-							<a href="http://github.com/akhil1213/Instagram-Clone"><img src="assets/images/icons8-github-24.png"></a>
-						</div>
-	  				</div>
-  					<div class = "row">
-  						<div class = "col-md-8 col-sm-6">
-								<p>Worked on a team of four students to create a web app using Angular, mongoDB, nodeJS, and the express framework. The website was designed to connect investors and Companies. Responsible for implementing the login/signup page, feed page, settings page, and the investors page using HTML, CSS, TypeScript. As well as connecting the frontend to the backend using express routes to make get,post,put, and delete requests to the mongoDB running inside the backend server. Mongoose was used to connect and send queries to the mongoDB instance.</p>
-  						</div>
-  						<div class = "col-md-4 col-sm-6">
-							<img src = "assets/images/inviewebsite.png" id = "projectImage"width = "300" height = "300">
-						</div>
-  					</div>
-  				</div>
+				  </div>
+				  <div class="container proj2ndrow">
+					<div class ="row">
+						<!-- <div class = "col-6">
+							<h2>Drag-And-Drop application(Internship)</h2>
+					  </div> -->
+					  <!-- <div class = "col-md-4 col-sm-4">
+						  
+						</div> -->
+						<div data-aos = "fade-right" class = "projinfo col-md-4 col-md-4">
+						  <a href="https://github.com/akhil1213/Invie" target="_blank">
+							  <img src="assets/images/inviewebsite.png">
+							  <div class="description">
+								  <h2>
+									  Invie (MEAN stack)
+								  </h2>
+								  <p>Social media platform to connect investors and Companies</p>
+								  <p>Responsible for implementing the login/signup page, feed page, settings page, and investors page</p>
+							  </div>
+						  </a>
+					  </div>
+					  <div data-aos = "fade-up" class = "projinfo col-md-4 col-md-4">
+						  <a href="https://github.com/akhil1213/Instagram-Clone" target="_blank">
+							  <img src="assets/images/igpic.jpg">
+							  <div class="description">
+								  <h2>
+									  Drag-And-Drop to C.R.M
+								  </h2>
+								  <p>Sending client data from forum to CRM using Django/Textract</p>
+							  </div>
+						  </a>
+					  </div>
+					  <div data-aos = "fade-left" class = "projinfo col-md-4 col-md-4">
+						  <a href="https://github.com/akhil1213/Course-Chat" target="_blank">
+							  <img  src="assets/images/coursechatpic.png">
+							  <div class="description">
+								  <h2>
+									  Drag-And-Drop to C.R.M
+								  </h2>
+								  <p>Sending client data from forum to CRM using Django/Textract</p>
+							  </div>	
+						  </a>
+					  </div>
+					</div>
+				</div>
 	  		</fieldset>
 </div>
 </section>

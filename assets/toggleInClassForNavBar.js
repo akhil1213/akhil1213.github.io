@@ -11,10 +11,10 @@ $(document).ready(function() {
     })
     var element = "#intro"
     var heightOfIntro = $(element).height(); // position = { left: 42, top: 567 }
+    //code to change background color of navbar after user passes about section.
     $(window).scroll(function(){
         // console.log($(window).scrollTop())
         if($(window).scrollTop() >= heightOfIntro){
-            console.log('yes')
             $('#navbar').css({"background-color":"black"})
         }else{
             $('#navbar').css('background-color','')
@@ -27,4 +27,41 @@ $(document).ready(function() {
         //     // console.log("bottomPos >= top pos of about me sec so trigger!")
         // }
     });
+    //turn width of description which has position:absolute to the width of the parent image.
+    //need a listener that listens to width changes of the document because width of parent images will change so
+    //width of description needs to change.
+    changeWidthOfProjectDescription = () =>{
+        widthOfProjectImages = $('.projinfo').width()
+        $('.description').each(function(item){
+            $(this).css('width',widthOfProjectImages);
+        })    
+    }
+    changeWidthOfProjectDescription()//initially the window size doesnt change so we have to set the width of descriptions to parent images
+    //now everytime the window resizes, set the width of the description to be width of parent images. each parent image will always have the same width cause of bootstrap.
+    $( window ).resize(function() {
+        changeWidthOfProjectDescription()
+    })
+    //code for project hovering so you can see description
+    $('.projinfo').mouseenter(function(){
+        description = $(this).find($('.description'))
+        description.css('display','block')
+        description.css({
+            'animation-name': 'fadeIn',
+            'animation-timing-function': 'ease-in-out',
+            'animation-duration': '1s',
+        })
+    }).mouseleave(()=>{
+        description = $(this).find($('.description'))
+        // if(description.css('display') == 'block')
+        // {
+        //     description.css({
+        //         'animation-name': 'fadeOut',
+        //         'animation-timing-function': 'ease-in-out',
+        //         'animation-duration': '1s',
+        //     })   
+        // }
+        
+        // animating out is too buggy.
+        description.css('display','none')
+    })
 })

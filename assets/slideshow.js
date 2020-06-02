@@ -1,9 +1,9 @@
+//once all the libraries load, put display of loader-wrapper to none.
 $(window).load(function() {
    $('#loader-wrapper').css('display','none');
-   $('#navbar').addClass('fixed-top')
+   $('#navbar').addClass('fixed-top')//navbar is initially hidden when website is loading 
 });
 $(document).ready(function() {
-    console.log("idk")
     $(window).on("load", function() {
         console.log("everytihng loaded.")
     });
@@ -15,8 +15,8 @@ $(document).ready(function() {
         'assets/images/drone-photography-of-a-city-during-sunset-3559235.jpg'
     ], {duration: 3000, fade: 750});
 })
-$(window).resize(function () { 
-    $('body').css('margin-top', parseInt($('#main-navbar').css("height"))-1000);
-});
+// $(window).resize(function () { 
+//     $('body').css('margin-top', parseInt($('#main-navbar').css("height"))-1000);
+// });
 
 
