@@ -5,6 +5,7 @@
 body {
 	font: 300 15px/1.6 'Raleway', serif, sans-serif;
   color: white;
+  z-index:-1;
 }
 #loader-wrapper {
   position: fixed;
@@ -144,15 +145,23 @@ div{
 	position:relative;
 }
 body{
-	background-color: #264d73;
+	background-color: #5d5C61;
 }
 #intro{
   padding-top:5%;
+  display:flex;
+  flex-direction: row;
 }
+
 #navbar{
   color:black;
   /* background-image:url("assets/images/pexels-photo-450055.jpeg"); */
   max-height: 100%;
+}
+#linktowebsite{
+  font-size:20px;
+  font-weight:bolder;
+  color:black;
 }
 .navcolor{
   background-image: url("pexels-photo-450055.jpeg");
@@ -347,11 +356,34 @@ section.inroduction{
 
 #small{
 	font-size:10px;
-
 }
+
 #projectheader{
 	display:flex;
 	flex:row;
+}
+.resumedownload{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+
+}
+.resumedownload div:nth-child(2){
+  border:2px solid black;
+  padding:4px;
+  text-decoration: none;
+}
+.resumedownload div:nth-child(2):hover{
+  background-color: black;
+}
+.resumedownload div:nth-child(2) a{
+  color:white;
+  font-weight: bold;
+}
+.resumedownload div:nth-child(2) a:hover{
+  text-decoration: none;
 }
 #projectdesc{
 	/*background-color: #004C99;*/
@@ -387,6 +419,9 @@ section.inroduction{
 }
 #titleanddesc{
 	/*color:teal;*/
+}
+.projects{
+  margin-top: 40px;
 }
 .projectImage{
     animation-name: bounceInRight;
@@ -486,8 +521,8 @@ section.inroduction{
      transform: translateY(0);
   }
 } 
-@media (max-width: 767px){
- body {
+@media (max-width: 1000px){
+  body {
     text-align: center;
   }
   #socialProfiles{
@@ -496,7 +531,12 @@ section.inroduction{
   #big,#gray{
     font-size:25px;
   }
+  .projinfo{
+    margin-top: 35px;
+  }
 }
+
+
 .hidden{
   display:none;
 }

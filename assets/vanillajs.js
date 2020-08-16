@@ -51,7 +51,6 @@ function displayExplanation(toshow){
 //     }, 4500)
 // }
 // function loaded(){
-//     console.log("loaded yes sir")
 //     images = document.getElementsByClassName("images")
 //     images = Array.prototype.slice.call( images )
 //     loopImages()

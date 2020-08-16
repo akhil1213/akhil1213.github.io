@@ -8,9 +8,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<!-- JAVASCRIPT BELOW --><!-- Javascript files -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
 	<title>Akhil Khanna's portfolio - Software Engineer</title>
 </head>
-<body data-aos-duration="1000" data-aos-easing="1500" onload = "loaded()">
+<body data-aos-duration="500" data-aos-easing="750" onload = "loaded()">
+	<div id="cursorfollower"><img src="assets/images/circle.png"></div>
 	<div id="loader-wrapper">
 		<div style="display:flex; top:40%;justify-content: center;align-items: center;"><p>Akhil Khanna's personal web page</p></div>
 		<div style="display:flex; top:50%;justify-content: center;align-items: center;"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
@@ -52,6 +54,16 @@
 					</div>
 			</div>
 		</div>
+		<div class="resumedownload">
+			<div>
+				<span id="js-rotating">Full Stack Engineer,Web/Mobile Developer,Data Science Enthusiast</span>
+			</div>
+			<div>
+				<img src="assets/images/icons8-download-16.png">
+				<a href="https://drive.google.com/file/d/1Yyw-tV3ob76HVnG2tKSz7eFmT0i1c2Dm/view" target="_blank" download="akhilsresume">Download my resume</a>
+			</div>
+		</div>
+
 	</section>
 	<section id="about" class = "about">
 		<div class="container">
@@ -72,7 +84,7 @@
 					<div data-aos = "fade-up"class="profile-widget">
 						<h3>Skills</h3>
 
-						<h5>JavaScript (Node, React, React-Native)</h5>
+						<h5>JavaScript (Express, React, React-Native)</h5>
 						<div class="skill-bar">
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
@@ -81,7 +93,7 @@
 							<div class="skill-rate-on"></div>
 						</div>
 
-						<h5>Python-Django, Python</h5>
+						<h5>Python-Django, Python, Flask</h5>
 						<div class="skill-bar">
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
@@ -108,12 +120,12 @@
 							<div class="skill-rate-off"></div>
 						</div>
 					</div>
-
 					<div data-aos = "fade-up" class="profile-widget">
 						<h3>Social Profiles</h3>
 						<div id="socialProfiles" style="display:flex; flex:row">
 							<a class="nav-link" href="http://github.com/akhil1213" target="_blank"><img src="assets/images/icons8-github-24.png"></a>
 							<a class = "nav-item" href="https://www.linkedin.com/in/akhil-khanna1213/" target="_blank"><img src="assets/images/icons8-linkedin-40.png"></a>			
+							<a class = "nav-item" href="https://www.youtube.com/channel/UCY1LeEL_lv4fN9WBrLp5SVA" target="_blank"><img src="assets/images/icons8-youtube-50.png"></a>			
 						</div>
 					</div>
 				</div>
@@ -138,8 +150,8 @@
 	<section id = "projects">
 		<div class = "projects">
 			<!--Software Projects-->
-					<fieldset class="border p-2">
-						  <legend class = "w-auto">Projects</legend>
+					<!-- <fieldset class="border p-2">
+						  <legend class = "w-auto">Projects</legend> -->
 						  <div class="container">
 							  <div class ="row">
 								  <!-- <div class = "col-6">
@@ -163,8 +175,7 @@
 									<a href="https://github.com/akhil1213/Course-Chat" target="_blank">
 										<img src="assets/images/coursechatwebsite.gif">
 										<div class="description">
-											<a class="nav-link" href="https://coursechat2.herokuapp.com" target="_blank">Link to website</a>
-											<!-- <a href="https://coursechat2.herokuapp.com" target="_blank">Link to website</a> -->
+											<a id = "linktowebsite" href="https://coursechat2.herokuapp.com" target="_blank">Link to website</a>
 											<p>M.E.R.N,Redux,Socket.io</p>
 											<p>Allow students enrolled in the same class for a certain semester to chat with one another.</p>
 											<p>Deployed using <b>HEROKU</b>,click to visit.</p>
@@ -172,6 +183,21 @@
 									</a>
 								</div>
 								<div data-aos = "fade-left" class = "projinfo col-md-4 col-md-4">
+									<a href="https://github.com/akhil1213/React-Native-Course-Chat-App" target="_blank">
+										<img src="assets/images/coursechatapp.gif">
+										<div class="description">
+											<h2>
+												CourseChat
+											</h2>
+											<p>React-Native, GraphQL, postgres</p>
+										</div>
+									</a>
+								</div>
+							  </div>
+						  </div>
+						  <div class="container proj2ndrow">
+							<div class ="row">
+								<div data-aos = "fade-up" class = "projinfo col-md-4 col-md-4">
 									<a href="https://github.com/akhil1213/Instagram-Clone" target="_blank">
 										<img src="assets/images/igpic.jpg">
 										<div class="description">
@@ -182,22 +208,6 @@
 										</div>
 									</a>
 								</div>
-								
-							  </div>
-						  </div>
-						  <div class="container proj2ndrow">
-							<div class ="row">
-							  <div data-aos = "fade-up" class = "projinfo col-md-4 col-md-4">
-								  <a href="https://github.com/akhil1213/React-Native-Course-Chat-App" target="_blank">
-									  <img src="assets/images/coursechatapp.gif">
-									  <div class="description">
-										  <h2>
-											  CourseChat
-										  </h2>
-										  <p>React-Native, GraphQL, postgres</p>
-									  </div>
-								  </a>
-							  </div>
 							  <div data-aos = "fade-left" class = "projinfo col-md-4 col-md-4">
 								  <a href="https://github.com/akhil1213/Giphy-Search-Engine" target="_blank">
 									  <img src="assets/images/giphysearch.gif">
@@ -223,7 +233,7 @@
 							</div>
 							</div>
 						</div>
-					  </fieldset>
+					  <!-- </fieldset> -->
 		</div>
 	</section>
 	<section id="experience"data-aos = "zoom-in-down" class="experience">
@@ -328,9 +338,11 @@
 				  <script src="assets/js/aos.js"></script>
 				  <script>
 					AOS.init({
-						duration:1200,
+						duration:600,
 						once: true,
 					});
 				  </script>
+				  <script src="bower_components/Morphext/dist/morphext.min.js"></script>
+
 </body>
 </html>
