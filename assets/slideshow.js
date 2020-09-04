@@ -1,8 +1,8 @@
 //once all the libraries load, put display of loader-wrapper to none.
-// $(window).load(function() {
-//    $('#loader-wrapper').css('display','none');
-//    $('#navbar').addClass('fixed-top')//navbar is initially hidden when website is loading 
-// });
+$(window).load(function() {
+   $('#loader-wrapper').css('display','none');
+   $('#navbar').addClass('fixed-top')//navbar is initially hidden when website is loading 
+});
 $(document).ready(function() {
     // $('#navbar').addClass('fixed-top')
     // $(window).on("load", function() {
