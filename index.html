@@ -85,7 +85,7 @@
 					<div data-aos = "fade-up"class="profile-widget">
 						<h3>Skills</h3>
 
-						<h5>JavaScript (Express, React, React-Native)</h5>
+						<h5>JavaScript (Express, React, Node.JS)</h5>
 						<div class="skill-bar">
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
@@ -94,7 +94,7 @@
 							<div class="skill-rate-on"></div>
 						</div>
 
-						<h5>Python-Django, Python, Flask</h5>
+						<h5>postgreSQL</h5>
 						<div class="skill-bar">
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
@@ -103,16 +103,16 @@
 							<div class="skill-rate-off"></div>
 						</div>
 
-						<h5>SQL/MongoDB</h5>
+						<h5>GraphQL, Redis, Redux</h5>
 						<div class="skill-bar">
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
-							<div class="skill-rate-off"></div>
+							<div class="skill-rate-on"></div>
 							<div class="skill-rate-off"></div>
 						</div>
-
-						<h5>AWS,Firebase</h5>
+						
+						<h5>(Data Engineering)ETL,Python,Pandas</h5>
 						<div class="skill-bar">
 							<div class="skill-rate-on"></div>
 							<div class="skill-rate-on"></div>
@@ -134,7 +134,7 @@
 				<div data-aos = "fade-left" class="col-md-6 col-sm-12 wow bounceInRight">
 					<h3>Profile</h3>
 					<h4>Hi everyone!</h4>
-					<p>I am currently seeking a Software Engineering positon. I have been working on several projects in various fields of Computer Science but have been focusing on Web/Mobile development, backend, and Data Science. I dived into all of these fields mainly using technologies such as React, React-Native, Python-Django and libraries such as pandas, seaborn, sklearn respectively.I'm enthusiastic about open source since I strongly believe that we can improve people's lives with open source contributions. For any further questions, please feel free to contact me.
+					<p>I am currently seeking a Software Engineering positon. I have been working on several projects in various fields of Computer Science but have been focusing on Web/Mobile development, backend, and Data Science. At work, I primarily focus on full stack using React, Node.JS, Express, postgreSQL, and GraphQL. I also worked on many of our ETL systems and scripts that run on a cronjob basis using Python, PySpark, Pandas, and postgreSQL. I'm learning a lot about converting raw data into useful information using Data Warehousing solutions such as Data Build Tool, Snowflake, and Tableau.
 					</p>
 
 					<p>I still consider myself as an ambitious student looking to gain experience in the field of computer science.
@@ -285,16 +285,45 @@
 					<div data-aos = "fade-right" class="col-md-3 order-1 order-md-1 order-sm-1 order-xs-1">
 						<div class="container">
 							<div class="jobs d-flex flex-column space-between">
+								<button id = "cs" onclick = "displayExplanation('.csexplanation')">Anthem</button>
 								<button class = "active" style="margin-top: 0" id="math" onclick = "displayExplanation('.velocityexplanation')">Velocity Capital Group</button>
-								<button id = "cs" onclick = "displayExplanation('.csexplanation')">Computer Science Tutor</button>
 								<button id = "dentist" onclick = "displayExplanation('.dentistexplanation')">Dental Assistant</button>
 							</div>
+						</div>
+					</div>
+					<div class="col-md-6 order-md-2 order-sm-3 csexplanation">
+						<div id = "resumelist">
+							<div id="position"><b>Mid-Level Software Engineer</b></div>
+							<ul>
+								<li>
+									Presented data models at an application layer with ReactJS using proprietary UI components at the request of product
+owners and fetched local and remote data using Apollo GraphQL client, and Redux.
+								</li>
+								<li>
+									Created REST api endpoints for Anthem’s API-Externalization service using Node.JS and Swagger code generation
+which sent blobs of data to AWS kinesis streams to be consumed by Anthem’s partners.
+								</li>
+								<li>
+									Created a microservice responsible for sending letters to patients and sending real time updates to the frontend using
+polling, type-graphql, and prisma.
+								</li>
+								<li>
+									Extended GraphQL schema by adding types, mutations, queries and subscriptions and implemented resolvers using
+knex and sequelize to operate on the postgreSQL database.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 order-md-3 order-sm-2 csexplanation">
+						<div id = "positionanddate">
+							<div id = "position"><h2>Anthem</span></h2></div>
+							<div id = "resumedate"><p>December 2020-current</p></div>
 						</div>
 					</div>
 					<div class="col-md-6 order-md-2 order-sm-3 velocityexplanation" data-aos = "fade-up" data-aos-duration="000">
 						<div id = "resumelist">
 							<div id = "position">
-								<b>Software Engineer Internship</b>
+								<b>Software Engineer</b>
 							</div>
 							<p>Incorporate modern software into the broker/underwriter application process to optimize the time for underwriters to fund companies</p>
 							<p>Built a text extraction pipeline, to add information of each client to the Salesforce CRM within seconds compared to tedious manual entry.</p>
@@ -307,32 +336,7 @@
 					<div data-aos = "fade-left" class="col-md-3 order-md-3 order-sm-2 velocityexplanation">
 						<div id = "positionanddate">
 							<div id = "position"><h2>Velocity Capital Group</span></h2></div>
-							<div id = "resumedate"><p>January 2020 - present</p></div>
-						</div>
-					</div>
-					<div class="col-md-6 order-md-2 order-sm-3 csexplanation">
-						<div id = "resumelist">
-							<div id="position"><b>Computer Science Tutor</b></div>
-							<ul>
-								<li>
-									Worked 15 hours a week in the CS department tutoring center, interacting and assisting undergraduates of all years.
-								</li>
-								<li>
-									Clarified foundational CS concepts in one-on-one and group settings, reviewing and implementing a wide array of data structures and algorithms.
-								</li>
-								<li>
-									Helped students with debugging programs and understanding project requirements.
-								</li>
-								<li>
-									Encouraged peers to persevere and demonstrate that anything is possible with sufficient effort.
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 order-md-3 order-sm-2 csexplanation">
-						<div id = "positionanddate">
-							<div id = "position"><h2>Queens College</span></h2></div>
-							<div id = "resumedate"><p>August 2018- December 2020</p></div>
+							<div id = "resumedate"><p>Feb 2018 - present</p></div>
 						</div>
 					</div>
 					<div class = "col-md-6 order-md-2 order-sm-3 dentistexplanation">
